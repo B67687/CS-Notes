@@ -47,8 +47,5 @@ sync-from-hub.ps1
 audit-folder-quality.ps1
 meta/
 
-# Hugo-content — old attempt artifacts not used by the site
-hugo-content/Hugo-Half-Failed-Implementation/
-
 # PNG images in vault (not used on the site)
 hugo-content/Obsidian-Notes-I-Wrote/Miscellaneous/**/*.png
