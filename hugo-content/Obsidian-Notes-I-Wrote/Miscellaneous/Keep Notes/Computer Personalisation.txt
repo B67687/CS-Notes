@@ -1,8 +1,0 @@
-Fluent Launcher replace Windows Start
-
-Enhance Mouse Visibility
-Accessibility > Mouse Pointer and Touch
-Size = 3
-
-Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
-> Settings 00000008 FE 03-> 01

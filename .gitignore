@@ -17,3 +17,15 @@ __pycache__/
 .idea/
 *.swp
 *.swo
+
+# Obsidian vault metadata (local config — useless in repo)
+.obsidian/
+.stfolder/
+.stfolder.removed-*/
+
+# Keep Notes — personal lists, not CS notes (not converted to site anyway)
+hugo-content/Obsidian-Notes-I-Wrote/Miscellaneous/Keep Notes/
+
+# Windows
+audit-folder-quality.ps1
+sync-from-hub.ps1

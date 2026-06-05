@@ -1,8 +1,0 @@
-- Bitwarden
-- Dark Reader
-- KeepassXC
-uBlock Origin
-- uBlock Lite
-- Privacy Badger
-- Roblox 2019
-- Rewards Search Automator

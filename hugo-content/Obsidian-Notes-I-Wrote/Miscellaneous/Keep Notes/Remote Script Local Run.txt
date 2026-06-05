@@ -1,2 +1,0 @@
-[Allow Remotely Signed Scripts to Run Locally]
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine

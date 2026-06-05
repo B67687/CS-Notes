@@ -1,4 +1,0 @@
-/* Apply custom background only in light mode */
-.theme-light {
-  --background-primary: rgb(249, 243, 231); /* Replace with your desired color */
-}
