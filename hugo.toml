@@ -14,6 +14,8 @@ defaultContentLanguage = "en"
   # KaTeX client-side rendering (needed because transform.ToMath is unavailable)
   [params.math]
     engine = "katex"
+    [params.math.katex]
+      assets = ["katex/katex.min.js", "katex/auto-render.min.js"]
 
   # Hextra specific
   description = "Computer Science, Hardware, and Mathematics notes"
@@ -49,14 +51,12 @@ defaultContentLanguage = "en"
     [markup.goldmark.renderer]
       unsafe = true  # Allow raw HTML in markdown
 
-  # Math rendering — Hextra uses passthrough + Hugo's transform.ToMath
+  # Math rendering — custom render hook sets hasMath, Hextra loads KaTeX client-side
   [markup.goldmark.extensions.passthrough]
     enable = true
     [markup.goldmark.extensions.passthrough.delimiters]
       block = [['$$', '$$']]
       inline = [['$', '$']]
-  [markup.math]
-    engine = "katex"
 
   # Syntax highlighting
   [markup.highlight]

@@ -1,4 +1,2 @@
-{{- /* Override Hextra's render hook to avoid transform.ToMath. Output
-delimiters so client-side KaTeX can find and render them. */ -}} {{-
-$.Page.Store.Set "hasMath" true -}} {{- if eq .Type "block" -}} $${{ .Inner }}$$
-{{- else -}} ${{ .Inner }}$ {{- end -}}
+{{ .Page.Store.Set "hasMath" true }}{{ if eq .Type "block" }}$${{ .Inner }}$${{
+else }}${{ .Inner }}${{ end }}
