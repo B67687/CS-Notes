@@ -115,6 +115,6 @@ Modular congruence is a way to classify integers by their **remainders** under a
 
 ### 🧠 Suggested Vault Links
 
-- [Euclidean Division — Modular Markdown Note](../euclidean-division-modular-markdown-note/)
-- [Modular Arithmetic — Operations and Properties](../modular-arithmetic-operations-and-properties/)
-- [Notation Reform — Symbolic Clarity in Math](../notation-reform-symbolic-clarity-in-math/)
+- Euclidean Division — Modular Markdown Note
+- Modular Arithmetic — Operations and Properties
+- Notation Reform — Symbolic Clarity in Math

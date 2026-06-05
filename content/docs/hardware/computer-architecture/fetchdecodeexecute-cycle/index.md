@@ -57,6 +57,6 @@ It starts when the computer powers on and continues until shutdown, looping bill
 
 ## 📌 Related Notes
 
-- [Machine Code](../machine-code/)
+- Machine Code
 - [Bytecode](../bytecode/)
-- [Instruction Pipelining](../instruction-pipelining/)
+- Instruction Pipelining

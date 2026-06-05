@@ -68,11 +68,11 @@ $$
 
 ## 🔗 Cross-links for Vault Integration
 
-- [Rational Closure: Fraction Operations and Integer Properties](../rational-closure-fraction-operations-and-integer-properties/)
-- [Parity Propagation: Even × Odd Rules](../parity-propagation-even-odd-rules/)
-- [Irrational Arithmetic: Cancellation and Residue Detection](../irrational-arithmetic-cancellation-and-residue-detection/)
-- [Audit Logic: Truth Tables and Counterexamples](../audit-logic-truth-tables-and-counterexamples/)
-- [Overflow Detection: Closure and Residue Analysis](../overflow-detection-closure-and-residue-analysis/)
+- Rational Closure: Fraction Operations and Integer Properties
+- Parity Propagation: Even × Odd Rules
+- Irrational Arithmetic: Cancellation and Residue Detection
+- Audit Logic: Truth Tables and Counterexamples
+- Overflow Detection: Closure and Residue Analysis
 
 ---
 

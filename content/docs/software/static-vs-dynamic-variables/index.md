@@ -95,8 +95,8 @@ def quack_and_walk(thing):
 
 ## 🔗 Related Notes
 
-- [Type Systems — Nominal vs Structural](../type-systems-nominal-vs-structural/)
-- [Polymorphism — Static, Dynamic, and Duck](../polymorphism-static-dynamic-and-duck/)
-- [Function Overloading vs Duck Behavior](../function-overloading-vs-duck-behavior/)
-- [Error Handling in Dynamic Languages](../error-handling-in-dynamic-languages/)
-- [Compile-Time vs Runtime Logic](../compile-time-vs-runtime-logic/)
+- Type Systems — Nominal vs Structural
+- Polymorphism — Static, Dynamic, and Duck
+- Function Overloading vs Duck Behavior
+- Error Handling in Dynamic Languages
+- Compile-Time vs Runtime Logic

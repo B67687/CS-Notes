@@ -65,9 +65,9 @@ It’s designed to be executed by a **process virtual machine** (VM) rather than
 
 ## 📌 Related Notes
 
-- [Virtual Machines — System vs Process](../virtual-machines-system-vs-process/)
-- [Just‑In‑Time Compilation](../justintime-compilation/)
-- [Machine Code](../machine-code/)
+- Virtual Machines — System vs Process
+- Just‑In‑Time Compilation
+- Machine Code
 
 ## 🔤 Bytecode / Disassembly Suffix Legend
 

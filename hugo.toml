@@ -77,7 +77,7 @@ contentDir = "content"
 
 # Output
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "RSS"]
   page = ["HTML"]
   section = ["HTML"]
 
