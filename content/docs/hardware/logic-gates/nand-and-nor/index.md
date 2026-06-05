@@ -28,26 +28,60 @@ In other words, these gates are **functionally complete**
 ## 🔧 NAND-Only Logic Constructions
 
 {{< callout type="info" >}}
-Primitive: $$A \uparrow B = \neg(A \land B)$$
+Primitive: 
 {{< /callout >}}
+$$
+A \uparrow B = \neg(A \land B)
+$$
+
+
 | Operation | NAND-Only Construction                  | Explanation                             |
 |-----------|-----------------------------------------|-----------------------------------------|
-| `NOT` A     | $$A \uparrow A$$                        | `NOT` `(`A `AND` A`)`<br><br>--> Negation of [ Idempotency](../boolean-algebra/#idempotent-law) |
-| A `AND` B   | $$(A \uparrow B) \uparrow (A \uparrow B)$$ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `AND` B`)`<br>**`AND`**<br>$\quad$`NOT` `(`A `AND` B`)`<br>`}`<br><br>--> [ Double-Negation](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
-| A `OR` B    | $$(A \uparrow A) \uparrow (B \uparrow B)$$ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `AND` A`)`<br>**`AND`**<br>$\quad$`NOT` `(`B `AND` B`)`<br>`}`<br><br>--> [ DeMorgan's Law](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
+| `NOT` A     | 
+$$
+A \uparrow A
+$$
+                        | `NOT` `(`A `AND` A`)`<br><br>--> Negation of [ Idempotency](../boolean-algebra/#idempotent-law) |
+| A `AND` B   | 
+$$
+(A \uparrow B) \uparrow (A \uparrow B)
+$$
+ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `AND` B`)`<br>**`AND`**<br>$\quad$`NOT` `(`A `AND` B`)`<br>`}`<br><br>--> [ Double-Negation](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
+| A `OR` B    | 
+$$
+(A \uparrow A) \uparrow (B \uparrow B)
+$$
+ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `AND` A`)`<br>**`AND`**<br>$\quad$`NOT` `(`B `AND` B`)`<br>`}`<br><br>--> [ DeMorgan's Law](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
 
 ---
 
 ## 🔧 NOR-Only Logic Constructions
 
 {{< callout type="info" >}}
-Primitive: $$A \downarrow B = \neg(A \lor B)$$
+Primitive: 
 {{< /callout >}}
+$$
+A \downarrow B = \neg(A \lor B)
+$$
+
+
 | Operation | NOR-Only Construction | Explanation |
 |-----------|------------------------|-------------|
-| `NOT` A     | $$A \downarrow A$$ | `NOT` `(`A `OR` A`)`<br><br>--> Negation of [ Idempotency](../boolean-algebra/#idempotent-law) |
-| A `OR` B    | $$(A \downarrow B) \downarrow (A \downarrow B)$$ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `OR` B`)`<br>**`OR`**<br>$\quad$`NOT` `(`A `OR` B`)`<br>`}`<br><br>--> [ Double-Negation](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
-| A `AND` B   | $$(A \downarrow A) \downarrow (B \downarrow B)$$ |  **`NOT`**`{`<br>$\quad$`NOT` `(`A `OR` A`)`<br>**`OR`**<br>$\quad$`NOT` `(`B `OR` B`)`<br>`}`<br><br>--> [ DeMorgan's Law](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
+| `NOT` A     | 
+$$
+A \downarrow A
+$$
+ | `NOT` `(`A `OR` A`)`<br><br>--> Negation of [ Idempotency](../boolean-algebra/#idempotent-law) |
+| A `OR` B    | 
+$$
+(A \downarrow B) \downarrow (A \downarrow B)
+$$
+ | **`NOT`**`{`<br>$\quad$`NOT` `(`A `OR` B`)`<br>**`OR`**<br>$\quad$`NOT` `(`A `OR` B`)`<br>`}`<br><br>--> [ Double-Negation](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
+| A `AND` B   | 
+$$
+(A \downarrow A) \downarrow (B \downarrow B)
+$$
+ |  **`NOT`**`{`<br>$\quad$`NOT` `(`A `OR` A`)`<br>**`OR`**<br>$\quad$`NOT` `(`B `OR` B`)`<br>`}`<br><br>--> [ DeMorgan's Law](../boolean-algebra/#fundamental-laws) through [ Idempotency](../boolean-algebra/#idempotent-law)<br> |
 
 ---
 

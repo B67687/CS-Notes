@@ -19,23 +19,23 @@ A **zero matrix** is an $n \times m$ matrix where **every entry is zero**. It’
 ### 🔹 Examples
 
 - General rectangular zero matrix:
-  $$
-  \mathbf{0}_{2 \times 4} = \begin{bmatrix}
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0
-  \end{bmatrix}
-  $$
+$$
+\mathbf{0}_{2 \times 4} = \begin{bmatrix}
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
 - Zero row vector:
-  $$
-  \mathbf{0} = [0 \quad 0 \quad 0 \quad 0]
-  $$
+$$
+\mathbf{0} = [0 \quad 0 \quad 0 \quad 0]
+$$
 - Zero column vector:
-  $$
-  \mathbf{0} = \begin{bmatrix}
-  0 \\
-  0
-  \end{bmatrix}
-  $$
+$$
+\mathbf{0} = \begin{bmatrix}
+0 \\
+0
+\end{bmatrix}
+$$
 
 ### 🔹 Properties
 

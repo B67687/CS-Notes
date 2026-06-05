@@ -25,13 +25,21 @@ When using these binary operators, we compare two items, for example:
 
 Consider the expression:
 
-$$A \cap (A \cup B)$$
+
+$$
+A \cap (A \cup B)
+$$
+
 
 - $A$ is **more strict** than $(A \cup B)$, since for $(A \cup B)$, satisfying $A$ **or** $B$ makes it true.
 - Since this expression hinges around $\cap$ (AND), the operation is seeking the common elements. The common elements must satisfy the **stricter** condition, which is $A$.
 - Thus, $A \cap (A \cup B)$ is actually just the same as the simpler expression $A$.
 
-$$A \cap (A \cup B) = A$$
+
+$$
+A \cap (A \cup B) = A
+$$
+
 
 ---
 
@@ -39,13 +47,21 @@ $$A \cap (A \cup B) = A$$
 
 Consider a similar expression:
 
-$$A \cup (A \cap B)$$
+
+$$
+A \cup (A \cap B)
+$$
+
 
 - $A$ is **more lenient** than $(A \cap B)$, since for $(A \cap B)$, **both** $A$ and $B$ must be met to make it true.
 - Since this expression hinges around $\cup$ (OR), the operation is seeking all elements from either side. The result will be defined by the **most lenient** condition, which is $A$.
 - Thus, $A \cup (A \cap B)$ is actually just the same as the simpler expression $A$.
 
-$$A \cup (A \cap B) = A$$
+
+$$
+A \cup (A \cap B) = A
+$$
+
 
 ---
 
@@ -69,4 +85,7 @@ In both expressions, $A$ turns out to be the more favorable condition.
 
 As a result of the Absorption Law, these two expressions are, of course, equal to each other:
 
-$$A \cap (A \cup B) = A \cup (A \cap B)$$
+
+$$
+A \cap (A \cup B) = A \cup (A \cap B)
+$$

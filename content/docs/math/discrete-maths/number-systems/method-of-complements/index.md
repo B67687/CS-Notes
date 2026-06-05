@@ -22,12 +22,12 @@ Goal: Make Subtractions be in terms of Addition
 ```
 $$
 \begin{align}
-	&73 - 47 \\ 
-	= \space & 73 - 47 + 100 - 100 \\
-	= \space & 73 + (100 - 47) - 100 \\
-	= \space & 73 + 53 - 100 \\
-	= \space & 126 - 100 \\
-	= \space & 26
+&73 - 47 \\
+= \space & 73 - 47 + 100 - 100 \\
+= \space & 73 + (100 - 47) - 100 \\
+= \space & 73 + 53 - 100 \\
+= \space & 126 - 100 \\
+= \space & 26
 \end{align}
 $$
 

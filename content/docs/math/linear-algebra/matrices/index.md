@@ -12,13 +12,13 @@ Each number is called an **entry** or **element** of the matrix.
 >
 > **General** matrix:
 
-  $$
-  \begin{bmatrix}
-  4 & 3 & 0 & 6 & -1 & 0 \\
-  0 & 2 & -4 & -7 & 1 & 3 \\
-  -6 & 1 & 5 & -12 & 0 & 1
-  \end{bmatrix}
-  $$
+$$
+\begin{bmatrix}
+4 & 3 & 0 & 6 & -1 & 0 \\
+0 & 2 & -4 & -7 & 1 & 3 \\
+-6 & 1 & 5 & -12 & 0 & 1
+\end{bmatrix}
+$$
 
 ---
 
@@ -118,14 +118,14 @@ We don’t generally subscript the size of the matrix as we did in the second ca
 ### 🧭 Vector Notation
 
 - Column matrix (vector): $\mathbf{a}$ or $\vec{a}$
-  $$
-  \mathbf{\vec{a}} = \begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{bmatrix}
+$$
+\mathbf{\vec{a}} = \begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{bmatrix}
 
- $$
+$$
 - Row matrix (vector): $\mathbf{b}$ or $\vec{b}$
-  $$
- \mathbf{\vec{b}} = [b_1, b_2, \dots, b_m]
- $$
+$$
+\mathbf{\vec{b}} = [b_1, b_2, \dots, b_m]
+$$
 
 {{< callout type="default" >}}
 In written documents, vectors are often **bolded**

@@ -21,8 +21,8 @@ Complex calculations like multiplication, inversion, and finding the determinant
 
 $$
 \begin{aligned}
-  \begin{bmatrix} \mathbf{A} & \mathbf{B} \\ \mathbf{C} & \mathbf{D} \end{bmatrix} \begin{bmatrix} \mathbf{E} \\ \mathbf{F} \end{bmatrix} = \begin{bmatrix} \mathbf{AE} + \mathbf{BF} \\ \mathbf{CE} + \mathbf{DF} \end{bmatrix}
-  \end{aligned}
+\begin{bmatrix} \mathbf{A} & \mathbf{B} \\ \mathbf{C} & \mathbf{D} \end{bmatrix} \begin{bmatrix} \mathbf{E} \\ \mathbf{F} \end{bmatrix} = \begin{bmatrix} \mathbf{AE} + \mathbf{BF} \\ \mathbf{CE} + \mathbf{DF} \end{bmatrix}
+\end{aligned}
 $$
 ​
 **Highlighting Structure:**

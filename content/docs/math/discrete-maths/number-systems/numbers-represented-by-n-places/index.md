@@ -18,14 +18,14 @@ $$
 And with `n` places, we have a combined outcome of `n` outcomes
 
 $$
-\underline{\phantom{()} \text{n}^{th} \space \text{place}} 
-\quad 
-\underline{\text{n-1}^{th} \space \text{place}} 
+\underline{\phantom{()} \text{n}^{th} \space \text{place}}
 \quad
-\cdots 
-\quad 
+\underline{\text{n-1}^{th} \space \text{place}}
+\quad
+\cdots
+\quad
 \underline{\text{2}^{nd} \space \text{place}}
-\quad 
+\quad
 \underline{\text{1}^{st} \space \text{place}}
 $$
 

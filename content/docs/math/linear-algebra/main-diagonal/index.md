@@ -39,7 +39,7 @@ In a square matrix $A$, the main diagonal consists of entries where **row index 
 ### 🔢 Trace of a Matrix
 
 - The **trace** is the sum of diagonal entries:
-  $$
-  \text{tr}(A) = \sum_{i=1}^{n} a_{ii}
-  $$
+$$
+\text{tr}(A) = \sum_{i=1}^{n} a_{ii}
+$$
 - Invariant under similarity transformations and appears in characteristic polynomials.

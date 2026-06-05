@@ -40,14 +40,14 @@ Each diagonal entry is squared independently.
 
 - Diagonal matrices are **trivially exponentiated**
 - Used in **diagonalization**:
-  $$
-  A = P D P^{-1} \Rightarrow A^k = P D^k P^{-1}
-  $$
+$$
+A = P D P^{-1} \Rightarrow A^k = P D^k P^{-1}
+$$
 - Powers of matrices become easy once diagonalized
 - Matrix exponentials simplify:
-  $$
-  e^{D t} = \text{diag}(e^{d_1 t}, e^{d_2 t}, \dots)
-  $$
+$$
+e^{D t} = \text{diag}(e^{d_1 t}, e^{d_2 t}, \dots)
+$$
 
 ---
 

@@ -51,9 +51,9 @@ $$
 ### 🧩 Properties
 
 - **Uniqueness**: For any integers $a$ and $b \ne 0$, there exists a *unique* pair $(q, r)$ such that:
-  $$
-  a = bq + r \quad \text{with} \quad 0 \le r < |b|
-  $$
+$$
+a = bq + r \quad \text{with} \quad 0 \le r < |b|
+$$
 - **Used in**:
   - Modular arithmetic: $a \mod b = r$
   - Euclidean algorithm for GCD

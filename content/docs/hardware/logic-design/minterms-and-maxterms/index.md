@@ -103,9 +103,13 @@ Since `AND` requires all its inputs to be `True` for the `AND` expression to be 
 
 {{< callout type="info" >}}
 For $A=1$, $B=0$, $C=1$, the minterm is:
-$$A \cdot B' \cdot C$$
-This is only true when A is `True`, B is `False`, and C is `True`
 {{< /callout >}}
+$$
+A \cdot B' \cdot C
+$$
+
+> This is only true when A is `True`, B is `False`, and C is `True`
+
 ---
 
 ## 🔸 Maxterm
@@ -126,9 +130,13 @@ Since `OR` requires none of its inputs to be `True` for the `OR` expression to b
 
 {{< callout type="info" >}}
 For $A=1$, $B=0$, $C=1$, the maxterm is:
-$$A' + B + C'$$
-This is only false when A is `True`, B is `False`, and C is `True`
 {{< /callout >}}
+$$
+A' + B + C'
+$$
+
+> This is only false when A is `True`, B is `False`, and C is `True`
+
 ---
 
 ## 🧮 Representation of the System by Active State
@@ -256,10 +264,17 @@ Both `SOP` and `POS` represent the same function—just from opposite perspectiv
 {{< callout type="info" >}}
 ****De Morgan’s Laws****
 De Morgan's Laws allow us to interchange `AND`/`OR` operations transform between `SOP` and `POS`
-
-$$(A \cdot B)' = A' + B'$$
-$$(A + B) = A' \cdot B'$$
 {{< /callout >}}
+$$
+(A \cdot B)' = A' + B'
+$$
+
+> 
+$$
+(A + B) = A' \cdot B'
+$$
+
+
 ---
 
 ## 📋 Summary Table

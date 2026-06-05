@@ -30,7 +30,11 @@ We discussed two primary methods for managing this challenge in computer archite
 -   A fixed-point number is typically represented as a bit-string: $N_{I}$ bits for the integer part and $N_{F}$ bits for the fractional part.
 -   **Notation:** The format is often written as **Q(I.F)**, where $I$ is the number of integer bits and $F$ is the number of fractional bits. A common signed format is **Q(1.15)** (1 sign bit, 15 fractional bits). 
 -   **Value Calculation:** The value $V$ of a fixed-point number is calculated as:
-    $$V = \sum_{i=-N_F}^{N_I-1} b_i \cdot 2^i$$
+    
+$$
+V = \sum_{i=-N_F}^{N_I-1} b_i \cdot 2^i
+$$
+
 
 ### Precision and Range
 
@@ -66,7 +70,11 @@ A floating-point number is stored using three fields:
 3.  **Mantissa / Significand (M):** $N_M$ bits, stores the precision digits. Since the most significant bit of the mantissa is always **1** for normalized numbers (e.g., $1.xxxxx$), this '1' is often **implicitly hidden**, giving one extra bit of precision for free.
 
 -   **Value Calculation:** The value $V$ of a floating-point number is calculated as:
-    $$V = (-1)^S \times (1.\text{Mantissa}) \times 2^{\text{Exponent} - \text{Bias}}$$
+    
+$$
+V = (-1)^S \times (1.\text{Mantissa}) \times 2^{\text{Exponent} - \text{Bias}}
+$$
+
     
 
 ### Precision and Range

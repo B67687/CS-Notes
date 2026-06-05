@@ -43,7 +43,11 @@ Even in its **generalized form**, multiplication remains semantically additive:
 
 **Scalar multiplication** applies a process to reach a result.
 
-$$a \cdot n$$
+
+$$
+a \cdot n
+$$
+
 
 {{< callout type="info" >}}
 **Abstraction-Preserving**
@@ -51,7 +55,11 @@ It stays within the abstraction as the **original number** is still **the one be
 {{< /callout >}}
 **Division** finds **how many times the process was applied** to get to the result
 
-$$\dfrac{c}{a} = n$$
+
+$$
+\dfrac{c}{a} = n
+$$
+
 
 {{< callout type="info" >}}
 **Abstraction Shift**
@@ -80,23 +88,27 @@ Otherwise, matrices cannot be meaningfully be said to be the **direct transforma
 
 ### ➕ Matrix Addition
 
-$$ A \pm B \in \mathbb{R}^{m \times n} $$
+
+$$
+A \pm B \in \mathbb{R}^{m \times n}
+$$
+
 
 Linear operations on these groups are still just **addition and subtraction**, applied **element-wise** on matrices of the **same shape**
 
 $$
 \begin{bmatrix}
-    a_{11} & a_{12} & \cdots & a_{1n} \\
-    a_{21} & a_{22} & \cdots & a_{2n} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    a_{m1} & a_{m2} & \cdots & a_{mn}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
 \end{bmatrix}
 \pm
 \begin{bmatrix}
-    b_{11} & b_{12} & \cdots & b_{1n} \\
-    b_{21} & b_{22} & \cdots & b_{2n} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    b_{m1} & b_{m2} & \cdots & b_{mn}
+b_{11} & b_{12} & \cdots & b_{1n} \\
+b_{21} & b_{22} & \cdots & b_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{m1} & b_{m2} & \cdots & b_{mn}
 \end{bmatrix}
 $$
 $$
@@ -104,16 +116,20 @@ $$
 $$
 $$
 \begin{bmatrix}
-    a_{11} \pm b_{11} & a_{12} \pm b_{12} & \cdots & a_{1n} \pm b_{1n} \\
-    a_{21} \pm b_{21} & a_{22} \pm b_{22} & \cdots & a_{2n} \pm b_{2n} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    a_{m1} \pm b_{m1} & a_{m2} \pm b_{m2} & \cdots & a_{mn} \pm b_{mn}
+a_{11} \pm b_{11} & a_{12} \pm b_{12} & \cdots & a_{1n} \pm b_{1n} \\
+a_{21} \pm b_{21} & a_{22} \pm b_{22} & \cdots & a_{2n} \pm b_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} \pm b_{m1} & a_{m2} \pm b_{m2} & \cdots & a_{mn} \pm b_{mn}
 \end{bmatrix}
 $$
 
 ### ✖️ Scalar Multiplication
 
-$$ kA \in \mathbb{R}^{m \times n} $$
+
+$$
+kA \in \mathbb{R}^{m \times n}
+$$
+
 
 Its notation shorthand for **repeated addition/subtraction** in matrices is also applied **element-wise** on matrices of the **same shape**
 
@@ -143,9 +159,14 @@ The **composition** of these 2 linear operations are also linear, thus this is t
 {{< callout type="info" >}}
 **Fundamental Composition Form**
 **Add** the **scaled** versions—$a_n$—of the **same size matrices**—$B_n$
-$$a_1 B_1 + a_2 B_2 + a_3 B_3 + \dots = C$$
+{{< /callout >}}
+$$
+a_1 B_1 + a_2 B_2 + a_3 B_3 + \dots = C
+$$
 
-[!warning] Why POS Is Not a Valid Composition
+
+{{< callout type="warning" >}}
+**Why POS Is Not a Valid Composition**
 While this form is clearly a **Sum of Products (SOP)**, one might ask:
 Why not **Product of Sums (POS)**?
 
@@ -170,9 +191,9 @@ Which is the same as just
 
 $$
 \boxed{
- \phantom{\biggr(}
- a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 + \dots = c
- \phantom{\biggr)}
+\phantom{\biggr(}
+a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 + \dots = c
+\phantom{\biggr)}
 }
 $$
 
@@ -184,11 +205,14 @@ It is essentially a **sum of products**, or **SOP**, of related numbers in matri
 
 [!info] Why "Dot Product"?
 “Dot Product” is named after the **dot notation** used to describe this **composite operation**
-
-$$A \cdot B$$
-
-*An undescriptive name this is*
 {{< /callout >}}
+$$
+A \cdot B
+$$
+
+>
+> *An undescriptive name this is*
+
 ---
 
 ## 📚 Generalizing the Dot Product
@@ -200,16 +224,24 @@ The general form is thus that this dot product can be done on multiple sets of n
 $a_n$ is the $n^{th}$ constant
 $B_n$ is the $n^{th}$ matrix of the same shape
 $C$ is the matrix of the same size as $B$
-$$a_1 B_1 + a_2 B_2 + a_3 B_3 + \dots = C$$
 {{< /callout >}}
+$$
+a_1 B_1 + a_2 B_2 + a_3 B_3 + \dots = C
+$$
+
+
 If we want more sets of constants to apply to each matrix $B_m$, we can also add those to $a_n$ and make them matrices as well
 
 {{< callout type="info" >}}
 **Generalised Form**
 $A_n$ and $B_n$ is the $n^{th}$ matrix of the same shape within their respective matrix groups
 $C$ is a matrix—but we haven't standardised what it's size should be
-$$A_1 B_1 + A_2 B_2 + A_3 B_3 + \dots = C$$
 {{< /callout >}}
+$$
+A_1 B_1 + A_2 B_2 + A_3 B_3 + \dots = C
+$$
+
+
 ---
 
 ## 🧭 Axis and Reading Order
@@ -264,21 +296,21 @@ Thus, we reached a form that is standard for use in matrix multiplication
 Each entry $c_{ij}$ in the **resultant matrix** is computed as a **dot product** between:
 
 - The **$i^{\text{th}}$ row** of matrix $A$:
-  $$
-  \mathbf{a_{ip}} = [a_{i1},\ a_{i2},\ a_{i3}, \cdots,\ a_{ip},]
-  $$
+$$
+\mathbf{a_{ip}} = [a_{i1},\ a_{i2},\ a_{i3}, \cdots,\ a_{ip},]
+$$
 
 - The **$j^{\text{th}}$ column** of matrix $B$:
-  $$
-  \mathbf{b_{pj}} =
-  \begin{bmatrix}
-  b_{1j} \\
-  b_{2j} \\
-  b_{3j} \\
-  \vdots \\
-  b_{pj} \\
-  \end{bmatrix}
-  $$
+$$
+\mathbf{b_{pj}} =
+\begin{bmatrix}
+b_{1j} \\
+b_{2j} \\
+b_{3j} \\
+\vdots \\
+b_{pj} \\
+\end{bmatrix}
+$$
 - Where $p$ is a shared dimension
 
 {{< callout type="info" >}}
@@ -315,32 +347,32 @@ $$
 =
 \begin{bmatrix}
 \textcolor{darkorange}{
- \boxed{
-  \textcolor{darkorange}{\mathbf{2}} \cdot \textcolor{darkgray}{5}
-  \textcolor{darkgray}{+}
-  \textcolor{darkorange}{\mathbf{3}} \cdot \textcolor{darkgray}{7}
- }
+\boxed{
+\textcolor{darkorange}{\mathbf{2}} \cdot \textcolor{darkgray}{5}
+\textcolor{darkgray}{+}
+\textcolor{darkorange}{\mathbf{3}} \cdot \textcolor{darkgray}{7}
+}
 }&
 \textcolor{darkorange}{
- \boxed{
-  \textcolor{darkorange}{\mathbf{2}} \cdot \textcolor{darkgray}{6}
-  \textcolor{darkgray}{+}
-  \textcolor{darkorange}{\mathbf{3}} \cdot \textcolor{darkgray}{8}
- }
+\boxed{
+\textcolor{darkorange}{\mathbf{2}} \cdot \textcolor{darkgray}{6}
+\textcolor{darkgray}{+}
+\textcolor{darkorange}{\mathbf{3}} \cdot \textcolor{darkgray}{8}
+}
 }\\
 \textcolor{green}{
- \boxed{
-  \textcolor{green}{\mathbf{4}} \cdot \textcolor{darkgray}{5}
-  \textcolor{darkgray}{+}
-  \textcolor{green}{\mathbf{1}} \cdot \textcolor{darkgray}{7}
- }
+\boxed{
+\textcolor{green}{\mathbf{4}} \cdot \textcolor{darkgray}{5}
+\textcolor{darkgray}{+}
+\textcolor{green}{\mathbf{1}} \cdot \textcolor{darkgray}{7}
+}
 }&
 \textcolor{green}{
- \boxed{
-  \textcolor{green}{\mathbf{4}} \cdot \textcolor{darkgray}{6}
-  \textcolor{darkgray}{+}
-  \textcolor{green}{\mathbf{1}} \cdot \textcolor{darkgray}{8}
- }
+\boxed{
+\textcolor{green}{\mathbf{4}} \cdot \textcolor{darkgray}{6}
+\textcolor{darkgray}{+}
+\textcolor{green}{\mathbf{1}} \cdot \textcolor{darkgray}{8}
+}
 }
 \end{bmatrix}
 =
@@ -367,32 +399,32 @@ $$
 =
 \begin{bmatrix}
 \textcolor{blue}{
- \boxed{
-  \textcolor{darkgray}{2} \cdot \textcolor{blue}{\mathbf{5}}
-  \textcolor{darkgray}{+}
-  \textcolor{darkgray}{3} \cdot \textcolor{blue}{\mathbf{7}}
- }
+\boxed{
+\textcolor{darkgray}{2} \cdot \textcolor{blue}{\mathbf{5}}
+\textcolor{darkgray}{+}
+\textcolor{darkgray}{3} \cdot \textcolor{blue}{\mathbf{7}}
+}
 }&
 \textcolor{red}{
- \boxed{
-  \textcolor{darkgray}{2} \cdot \textcolor{red}{\mathbf{6}}
-  \textcolor{darkgray}{+}
-  \textcolor{darkgray}{3} \cdot \textcolor{red}{\mathbf{8}}
- }
+\boxed{
+\textcolor{darkgray}{2} \cdot \textcolor{red}{\mathbf{6}}
+\textcolor{darkgray}{+}
+\textcolor{darkgray}{3} \cdot \textcolor{red}{\mathbf{8}}
+}
 } \\
 \textcolor{blue}{
- \boxed{
-  \textcolor{darkgray}{4} \cdot \textcolor{blue}{\mathbf{5}}
-  \textcolor{darkgray}{+}
-  \textcolor{darkgray}{1} \cdot \textcolor{blue}{\mathbf{7}}
- }
+\boxed{
+\textcolor{darkgray}{4} \cdot \textcolor{blue}{\mathbf{5}}
+\textcolor{darkgray}{+}
+\textcolor{darkgray}{1} \cdot \textcolor{blue}{\mathbf{7}}
+}
 }&
 \textcolor{red}{
- \boxed{
-  \textcolor{darkgray}{4} \cdot \textcolor{red}{\mathbf{6}}
-  \textcolor{darkgray}{+}
-  \textcolor{darkgray}{1} \cdot \textcolor{red}{\mathbf{8}}
- }
+\boxed{
+\textcolor{darkgray}{4} \cdot \textcolor{red}{\mathbf{6}}
+\textcolor{darkgray}{+}
+\textcolor{darkgray}{1} \cdot \textcolor{red}{\mathbf{8}}
+}
 }
 \end{bmatrix}
 =
@@ -417,18 +449,18 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix}
-	\textcolor{darkorange}{2} \cdot \textcolor{blue}{5}
-	+\,
-	\textcolor{darkorange}{3} \cdot \textcolor{blue}{7}&
-	\textcolor{darkorange}{2} \cdot \textcolor{red}{6}
-	+\,
-	\textcolor{darkorange}{3} \cdot \textcolor{red}{8}\\
-	\textcolor{green}{4} \cdot \textcolor{blue}{5}
-	+\,
-	\textcolor{green}{1} \cdot \textcolor{blue}{7}&
-	\textcolor{green}{4} \cdot \textcolor{red}{6}
-	+\,
-	\textcolor{green}{1} \cdot \textcolor{red}{8}
+\textcolor{darkorange}{2} \cdot \textcolor{blue}{5}
++\,
+\textcolor{darkorange}{3} \cdot \textcolor{blue}{7}&
+\textcolor{darkorange}{2} \cdot \textcolor{red}{6}
++\,
+\textcolor{darkorange}{3} \cdot \textcolor{red}{8}\\
+\textcolor{green}{4} \cdot \textcolor{blue}{5}
++\,
+\textcolor{green}{1} \cdot \textcolor{blue}{7}&
+\textcolor{green}{4} \cdot \textcolor{red}{6}
++\,
+\textcolor{green}{1} \cdot \textcolor{red}{8}
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -465,37 +497,37 @@ Where each **column** on the **right constant matrix** determines the **correspo
 
 $$
 \begin{align*}
-\begin{pmatrix} 
-	2 & 3 \\ 4 & 1 
-\end{pmatrix} 
-\begin{pmatrix} 
-	\textcolor{blue}{\mathbf{5}} & \textcolor{red}{\mathbf{6}} \\ 
-	\textcolor{blue}{\mathbf{7}} & \textcolor{red}{\mathbf{8}} 
+\begin{pmatrix}
+2 & 3 \\ 4 & 1
+\end{pmatrix}
+\begin{pmatrix}
+\textcolor{blue}{\mathbf{5}} & \textcolor{red}{\mathbf{6}} \\
+\textcolor{blue}{\mathbf{7}} & \textcolor{red}{\mathbf{8}}
 \end{pmatrix} &=
 \begin{pmatrix}
-  \begin{pmatrix} 
-	  2 \\ 4 
-  \end{pmatrix}
-  \textcolor{blue}{\mathbf{5}}
-  + 
-  \begin{pmatrix} 
-  3 \\ 1 
-  \end{pmatrix}
-  \textcolor{blue}{\mathbf{7}} &
-  \begin{pmatrix} 
-  2 \\ 4 
-  \end{pmatrix}
-  \textcolor{red}{\mathbf{6}} 
-  + 
-  \begin{pmatrix} 
-  3 \\ 1 
-  \end{pmatrix}
-  \textcolor{red}{\mathbf{8}}
+\begin{pmatrix}
+2 \\ 4
+\end{pmatrix}
+\textcolor{blue}{\mathbf{5}}
++
+\begin{pmatrix}
+3 \\ 1
+\end{pmatrix}
+\textcolor{blue}{\mathbf{7}} &
+\begin{pmatrix}
+2 \\ 4
+\end{pmatrix}
+\textcolor{red}{\mathbf{6}}
++
+\begin{pmatrix}
+3 \\ 1
+\end{pmatrix}
+\textcolor{red}{\mathbf{8}}
 \end{pmatrix} \\
 &=
 \begin{pmatrix}
-  \begin{pmatrix} 10 \\ 20 \end{pmatrix} + \begin{pmatrix} 21 \\ 7 \end{pmatrix} &
-  \begin{pmatrix} 12 \\ 24 \end{pmatrix} + \begin{pmatrix} 24 \\ 8 \end{pmatrix}
+\begin{pmatrix} 10 \\ 20 \end{pmatrix} + \begin{pmatrix} 21 \\ 7 \end{pmatrix} &
+\begin{pmatrix} 12 \\ 24 \end{pmatrix} + \begin{pmatrix} 24 \\ 8 \end{pmatrix}
 \end{pmatrix} \\
 &=
 \begin{pmatrix} 31 & 36 \\ 27 & 32 \end{pmatrix}
@@ -513,37 +545,37 @@ Each **row** on the **left coefficient matrix** determines the **corresponding r
 
 $$
 \begin{align*}
-	\begin{pmatrix} 
-		\mathbf{\textcolor{darkorange}{2}} & \mathbf{\textcolor{darkorange}{3}} \\ 
-		\mathbf{\textcolor{green}{4}} & \mathbf{\textcolor{green}{1}} 
-	\end{pmatrix} 
-	\begin{pmatrix} 
-		5 & 6 \\ 
-		7 & 8 
-	\end{pmatrix} 
-	&=
-	\begin{pmatrix}
-		\mathbf{\textcolor{darkorange}{2}} 
-		\begin{pmatrix} 
-			5 & 6 
-		\end{pmatrix} 
-		+ \mathbf{\textcolor{darkorange}{3}} 
-		\begin{pmatrix} 
-			7 & 8 
-		\end{pmatrix} \\
-		\mathbf{\textcolor{green}{4}} 
-		\begin{pmatrix} 
-			5 & 6 
-		\end{pmatrix}
-		+ \mathbf{\textcolor{green}{1}} 
-		\begin{pmatrix} 
-			7 & 8 
-		\end{pmatrix}
-	\end{pmatrix} \\
+\begin{pmatrix}
+\mathbf{\textcolor{darkorange}{2}} & \mathbf{\textcolor{darkorange}{3}} \\
+\mathbf{\textcolor{green}{4}} & \mathbf{\textcolor{green}{1}}
+\end{pmatrix}
+\begin{pmatrix}
+5 & 6 \\
+7 & 8
+\end{pmatrix}
 &=
 \begin{pmatrix}
-  \begin{pmatrix} 10 & 12 \end{pmatrix} + \begin{pmatrix} 21 & 24 \end{pmatrix} \\
-  \begin{pmatrix} 20 & 24 \end{pmatrix} + \begin{pmatrix} 7 & 8 \end{pmatrix}
+\mathbf{\textcolor{darkorange}{2}}
+\begin{pmatrix}
+5 & 6
+\end{pmatrix}
++ \mathbf{\textcolor{darkorange}{3}}
+\begin{pmatrix}
+7 & 8
+\end{pmatrix} \\
+\mathbf{\textcolor{green}{4}}
+\begin{pmatrix}
+5 & 6
+\end{pmatrix}
++ \mathbf{\textcolor{green}{1}}
+\begin{pmatrix}
+7 & 8
+\end{pmatrix}
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+\begin{pmatrix} 10 & 12 \end{pmatrix} + \begin{pmatrix} 21 & 24 \end{pmatrix} \\
+\begin{pmatrix} 20 & 24 \end{pmatrix} + \begin{pmatrix} 7 & 8 \end{pmatrix}
 \end{pmatrix} \\
 &=
 \begin{pmatrix} 31 & 36 \\ 27 & 32 \end{pmatrix}
@@ -568,38 +600,38 @@ $$
 \end{bmatrix}
 &=
 \underbrace{
-    \begin{bmatrix} \textcolor{darkorange}{2} \\ \textcolor{green}{4} \end{bmatrix}
-    \begin{bmatrix} \textcolor{blue}{5} & \textcolor{red}{6} \end{bmatrix}
+\begin{bmatrix} \textcolor{darkorange}{2} \\ \textcolor{green}{4} \end{bmatrix}
+\begin{bmatrix} \textcolor{blue}{5} & \textcolor{red}{6} \end{bmatrix}
 }_{\text{Rank 1 Matrix 1}}
 +
 \underbrace{
-    \begin{bmatrix} \textcolor{darkorange}{3} \\ \textcolor{green}{1} \end{bmatrix}
-    \begin{bmatrix} \textcolor{blue}{7} & \textcolor{red}{8} \end{bmatrix}
+\begin{bmatrix} \textcolor{darkorange}{3} \\ \textcolor{green}{1} \end{bmatrix}
+\begin{bmatrix} \textcolor{blue}{7} & \textcolor{red}{8} \end{bmatrix}
 }_{\text{Rank 1 Matrix 2}} \\
 &=
 \begin{bmatrix}
-  \textcolor{darkorange}{2} \cdot \textcolor{blue}{5} & \textcolor{darkorange}{2} \cdot \textcolor{red}{6} \\
-  \textcolor{green}{4} \cdot \textcolor{blue}{5} & \textcolor{green}{4} \cdot \textcolor{red}{6}
+\textcolor{darkorange}{2} \cdot \textcolor{blue}{5} & \textcolor{darkorange}{2} \cdot \textcolor{red}{6} \\
+\textcolor{green}{4} \cdot \textcolor{blue}{5} & \textcolor{green}{4} \cdot \textcolor{red}{6}
 \end{bmatrix}
 +
 \begin{bmatrix}
-  \textcolor{darkorange}{3} \cdot \textcolor{blue}{7} & \textcolor{darkorange}{3} \cdot \textcolor{red}{8} \\
-  \textcolor{green}{1} \cdot \textcolor{blue}{7} & \textcolor{green}{1} \cdot \textcolor{red}{8}
+\textcolor{darkorange}{3} \cdot \textcolor{blue}{7} & \textcolor{darkorange}{3} \cdot \textcolor{red}{8} \\
+\textcolor{green}{1} \cdot \textcolor{blue}{7} & \textcolor{green}{1} \cdot \textcolor{red}{8}
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-  10 & 12 \\
-  20 & 24
+10 & 12 \\
+20 & 24
 \end{bmatrix}
 +
 \begin{bmatrix}
-  21 & 24 \\
-  7 & 8
+21 & 24 \\
+7 & 8
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-  10+21 & 12+24 \\
-  20+7 & 24+8
+10+21 & 12+24 \\
+20+7 & 24+8
 \end{bmatrix} \\
 &=
 \begin{bmatrix} 31 & 36 \\ 27 & 32 \end{bmatrix}
@@ -627,28 +659,28 @@ $$
 \end{bmatrix}
 &=
 \begin{bmatrix}
-    \textcolor{darkorange}{\mathbf{A}_{11}}\textcolor{blue}{\mathbf{B}_{11}} + \textcolor{darkorange}{\mathbf{A}_{12}}\textcolor{blue}{\mathbf{B}_{21}} & \textcolor{darkorange}{\mathbf{A}_{11}}\textcolor{red}{\mathbf{B}_{12}} + \textcolor{darkorange}{\mathbf{A}_{12}}\textcolor{red}{\mathbf{B}_{22}} \\
-    \textcolor{green}{\mathbf{A}_{21}}\textcolor{blue}{\mathbf{B}_{11}} + \textcolor{green}{\mathbf{A}_{22}}\textcolor{blue}{\mathbf{B}_{21}} & \textcolor{green}{\mathbf{A}_{21}}\textcolor{red}{\mathbf{B}_{12}} + \textcolor{green}{\mathbf{A}_{22}}\textcolor{red}{\mathbf{B}_{22}}
+\textcolor{darkorange}{\mathbf{A}_{11}}\textcolor{blue}{\mathbf{B}_{11}} + \textcolor{darkorange}{\mathbf{A}_{12}}\textcolor{blue}{\mathbf{B}_{21}} & \textcolor{darkorange}{\mathbf{A}_{11}}\textcolor{red}{\mathbf{B}_{12}} + \textcolor{darkorange}{\mathbf{A}_{12}}\textcolor{red}{\mathbf{B}_{22}} \\
+\textcolor{green}{\mathbf{A}_{21}}\textcolor{blue}{\mathbf{B}_{11}} + \textcolor{green}{\mathbf{A}_{22}}\textcolor{blue}{\mathbf{B}_{21}} & \textcolor{green}{\mathbf{A}_{21}}\textcolor{red}{\mathbf{B}_{12}} + \textcolor{green}{\mathbf{A}_{22}}\textcolor{red}{\mathbf{B}_{22}}
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-    (\textcolor{darkorange}{2} \cdot \textcolor{blue}{5}) + (\textcolor{darkorange}{3} \cdot \textcolor{blue}{7}) & (\textcolor{darkorange}{2} \cdot \textcolor{red}{6}) + (\textcolor{darkorange}{3} \cdot \textcolor{red}{8}) \\
-    (\textcolor{green}{4} \cdot \textcolor{blue}{5}) + (\textcolor{green}{1} \cdot \textcolor{blue}{7}) & (\textcolor{green}{4} \cdot \textcolor{red}{6}) + (\textcolor{green}{1} \cdot \textcolor{red}{8})
+(\textcolor{darkorange}{2} \cdot \textcolor{blue}{5}) + (\textcolor{darkorange}{3} \cdot \textcolor{blue}{7}) & (\textcolor{darkorange}{2} \cdot \textcolor{red}{6}) + (\textcolor{darkorange}{3} \cdot \textcolor{red}{8}) \\
+(\textcolor{green}{4} \cdot \textcolor{blue}{5}) + (\textcolor{green}{1} \cdot \textcolor{blue}{7}) & (\textcolor{green}{4} \cdot \textcolor{red}{6}) + (\textcolor{green}{1} \cdot \textcolor{red}{8})
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-    (\textcolor{darkorange}{10} + \textcolor{darkorange}{21}) & (\textcolor{darkorange}{12} + \textcolor{darkorange}{24}) \\
-    (\textcolor{green}{20} + \textcolor{green}{7}) & (\textcolor{green}{24} + \textcolor{green}{8})
+(\textcolor{darkorange}{10} + \textcolor{darkorange}{21}) & (\textcolor{darkorange}{12} + \textcolor{darkorange}{24}) \\
+(\textcolor{green}{20} + \textcolor{green}{7}) & (\textcolor{green}{24} + \textcolor{green}{8})
 \end{bmatrix} \\
 &=
 \begin{bmatrix}
-    31 & 36 \\
-    27 & 32
+31 & 36 \\
+27 & 32
 \end{bmatrix} \\
-&= 
-\begin{bmatrix} 
-	\mathbf{C}_{11} & \mathbf{C}_{12} \\ 
-	\mathbf{C}_{21} & \mathbf{C}_{22} 
+&=
+\begin{bmatrix}
+\mathbf{C}_{11} & \mathbf{C}_{12} \\
+\mathbf{C}_{21} & \mathbf{C}_{22}
 \end{bmatrix}
 \end{align*}
 $$

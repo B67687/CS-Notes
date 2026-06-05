@@ -71,5 +71,8 @@ But $A$ and $B$ both being `True` is already handled by $A \cdot B$——so we h
 
 {{< callout type="info" >}}
 **General Formula for Sum**
-$$C_{out} = A \cdot B + (A \oplus B) \cdot C_{in}$$
 {{< /callout >}}
+$$
+C_{out} = A \cdot B + (A \oplus B) \cdot C_{in}
+$$
+

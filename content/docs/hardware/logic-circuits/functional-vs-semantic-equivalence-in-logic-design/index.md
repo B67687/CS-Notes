@@ -11,11 +11,31 @@ Functional equivalence tells you two designs compute the same Boolean function; 
 ## 🧩 Concepts and Definitions
 
 - **Boolean function:** Maps inputs to outputs regardless of naming or polarity. Example:
-  $$F = (A \lor \overline{C}) \land (\overline{B} \lor D)$$
+  
+$$
+F = (A \lor \overline{C}) \land (\overline{B} \lor D)
+$$
+
 
 - **Signal polarity and assertion:**
-  - **Active-high signal X:** Asserted when $$X = 1$$. No bubble at the pin.
-  - **Active-low signal X\*:** Asserted when $$X = 0$$. Bubble at the pin. Algebraically, treat $$X^*$$ as $$\overline{X}$$.
+  - **Active-high signal X:** Asserted when 
+$$
+X = 1
+$$
+. No bubble at the pin.
+  - **Active-low signal X\*:** Asserted when 
+$$
+X = 0
+$$
+. Bubble at the pin. Algebraically, treat 
+$$
+X^*
+$$
+ as 
+$$
+\overline{X}
+$$
+.
 
 - **Bubble logic convention:**
   - **Bubble on input:** The gate internally inverts that pin before applying its operation.
@@ -32,22 +52,70 @@ Functional equivalence tells you two designs compute the same Boolean function; 
 
 - **Spec (verbal):** F\* is asserted only when either A or C\* is asserted, and either B or D\* is negated.
 - **Translate to logic conditions:**
-  - Either A or C\* asserted → $$A = 1$$ or $$C = 0$$ → $$A \lor \overline{C}$$
-    - Either B or D\* negated → $$B = 0$$ or $$D = 1$$ → $$\overline{B} \lor D$$
+  - Either A or C\* asserted → 
+$$
+A = 1
+$$
+ or 
+$$
+C = 0
+$$
+ → 
+$$
+A \lor \overline{C}
+$$
+
+    - Either B or D\* negated → 
+$$
+B = 0
+$$
+ or 
+$$
+D = 1
+$$
+ → 
+$$
+\overline{B} \lor D
+$$
+
 - **Active-high function:**
-  $$F = (A \lor \overline{C}) \land (\overline{B} \lor D)$$
+  
+$$
+F = (A \lor \overline{C}) \land (\overline{B} \lor D)
+$$
+
 
 - **Active-low output:**
-  $$F^* = \overline{F} = \overline{(A \lor \overline{C}) \land (\overline{B} \lor D)}$$
+  
+$$
+F^* = \overline{F} = \overline{(A \lor \overline{C}) \land (\overline{B} \lor D)}
+$$
+
 
 - **Bubble-matched realization:**
-  - OR1: A (non-bubble) + C (bubble input) → $$A \lor \overline{C}$$
-  - OR2: B (bubble input) + D (non-bubble) → $$\overline{B} \lor D$$
-  - AND gate with bubble output → $$F^*$$
+  - OR1: A (non-bubble) + C (bubble input) → 
+$$
+A \lor \overline{C}
+$$
+
+  - OR2: B (bubble input) + D (non-bubble) → 
+$$
+\overline{B} \lor D
+$$
+
+  - AND gate with bubble output → 
+$$
+F^*
+$$
+
   - ✅ Semantic clarity preserved
 
 - **Functionally correct but semantically noisy variant:**
-  - NAND gate with non-bubble inputs → computes $$F^*$$ but violates bubble matching
+  - NAND gate with non-bubble inputs → computes 
+$$
+F^*
+$$
+ but violates bubble matching
   - ❌ Fails semantic audit
 
 ---
@@ -55,8 +123,16 @@ Functional equivalence tells you two designs compute the same Boolean function; 
 ## 🔄 Transformation Recipes: Preserve Function While Switching Semantics
 
 - **De Morgan’s Laws:**
-  $$\overline{X \land Y} = \overline{X} \lor \overline{Y}$$
-  $$\overline{X \lor Y} = \overline{X} \land \overline{Y}$$
+  
+$$
+\overline{X \land Y} = \overline{X} \lor \overline{Y}
+$$
+
+  
+$$
+\overline{X \lor Y} = \overline{X} \land \overline{Y}
+$$
+
 
 - **Polarity flips:**
   - Flip input sense → add bubble + rename net
@@ -67,9 +143,17 @@ Functional equivalence tells you two designs compute the same Boolean function; 
   - All-NOR: push bubbles to outputs, use NORs with bubble inputs
 
 - **Equivalence proof sketch:**
-  $$F^* = \overline{(A \lor \overline{C}) \land (\overline{B} \lor D)}$$
+  
+$$
+F^* = \overline{(A \lor \overline{C}) \land (\overline{B} \lor D)}
+$$
+
   Apply De Morgan:
-  $$F^* = \overline{A \lor \overline{C}} \lor \overline{\overline{B} \lor D} = (\overline{A} \land C) \lor (B \land \overline{D})$$
+  
+$$
+F^* = \overline{A \lor \overline{C}} \lor \overline{\overline{B} \lor D} = (\overline{A} \land C) \lor (B \land \overline{D})
+$$
+
   ✅ Functionally equivalent, semantically shifted
 
 ---
@@ -110,12 +194,40 @@ Functional equivalence tells you two designs compute the same Boolean function; 
 
 ## 🧠 Practice Prompts
 
-- **P1:** Given $$F = (\overline{X} \lor Y) \land (Z \lor \overline{W})$$, draw bubble-matched schematic with $$F^*$$ output
-- **P2:** From $$F^* = \overline{A \land \overline{B}}$$, draw all-NAND and bubble-matched OR-AND version
-- **P3:** Convert $$F^* = \overline{P \lor \overline{Q}}$$ into NOR-centric schematic
+- **P1:** Given 
+$$
+F = (\overline{X} \lor Y) \land (Z \lor \overline{W})
+$$
+, draw bubble-matched schematic with 
+$$
+F^*
+$$
+ output
+- **P2:** From 
+$$
+F^* = \overline{A \land \overline{B}}
+$$
+, draw all-NAND and bubble-matched OR-AND version
+- **P3:** Convert 
+$$
+F^* = \overline{P \lor \overline{Q}}
+$$
+ into NOR-centric schematic
 
 **Answer Sketches:**
 
-- **P1:** $$F^* = \overline{(\overline{X} \lor Y) \land (Z \lor \overline{W})} = (X \land \overline{Y}) \lor (\overline{Z} \land W)$$
-- **P2:** $$F^* = \overline{A \land \overline{B}} = \overline{A} \lor B$$
-- **P3:** $$F^* = \overline{P \lor \overline{Q}} = \overline{P} \land Q$$
+- **P1:** 
+$$
+F^* = \overline{(\overline{X} \lor Y) \land (Z \lor \overline{W})} = (X \land \overline{Y}) \lor (\overline{Z} \land W)
+$$
+
+- **P2:** 
+$$
+F^* = \overline{A \land \overline{B}} = \overline{A} \lor B
+$$
+
+- **P3:** 
+$$
+F^* = \overline{P \lor \overline{Q}} = \overline{P} \land Q
+$$
+

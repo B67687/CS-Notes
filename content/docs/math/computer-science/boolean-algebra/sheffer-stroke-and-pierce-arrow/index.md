@@ -7,11 +7,35 @@ draft: false
 
 | Symbol | Operation | Formal Name | Expression |
 |--------|-----------|-------------|------------|
-| $$A \uparrow B$$ | NAND | Sheffer stroke | $$(A \land B)'$$ |
-| $$A \downarrow B$$ | NOR | Peirce arrow | $$(A \lor B)'$$ |
+| 
+$$
+A \uparrow B
+$$
+ | NAND | Sheffer stroke | 
+$$
+(A \land B)'
+$$
+ |
+| 
+$$
+A \downarrow B
+$$
+ | NOR | Peirce arrow | 
+$$
+(A \lor B)'
+$$
+ |
 
-- **Henry M. Sheffer** introduced $$\uparrow$$ in 1913 as a single primitive capable of expressing all Boolean logic.
-- **Charles S. Peirce** explored $$\downarrow$$ earlier as a dual primitive.
+- **Henry M. Sheffer** introduced 
+$$
+\uparrow
+$$
+ in 1913 as a single primitive capable of expressing all Boolean logic.
+- **Charles S. Peirce** explored 
+$$
+\downarrow
+$$
+ earlier as a dual primitive.
 - Both symbols represent **functionally complete** operations — each alone can construct all logical gates.
 
 ---

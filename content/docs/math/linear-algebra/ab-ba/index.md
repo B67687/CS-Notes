@@ -67,8 +67,8 @@ Transpose flips both the **order** and the **orientation** of the original matri
 
 $$
 \boxed{
- \phantom{\big(}
- (AB)^\top = B^\top A^\top
- \phantom{\big)}
+\phantom{\big(}
+(AB)^\top = B^\top A^\top
+\phantom{\big)}
 }
 $$

@@ -34,7 +34,11 @@ A Schmitt buffer is like the inverter’s chill cousin. It doesn’t flip the si
 Between $V_{T-}$ and $V_{T+}$: The output **retains its previous state**.
 - This gap between thresholds is called **hysteresis**
 
-$$V_H = V_{T+} - V_{T-}$$
+
+$$
+V_H = V_{T+} - V_{T-}
+$$
+
 
 This voltage gap $V_H$ determines the circuit's **noise immunity**. Any noise spike smaller than $V_H$ will not cause the output to switch back prematurely.
 

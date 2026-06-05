@@ -128,16 +128,32 @@ $$
 Step-by-step:
 
 1. Normalize $R_1$:
-   $$ R_1 \rightarrow \frac{1}{3}R_1 $$
+   
+$$
+R_1 \rightarrow \frac{1}{3}R_1
+$$
+
 
 2. Eliminate below using clean multiples:
-   $$ R_2 + 5R_1,\quad R_3 + 3R_1 $$
+   
+$$
+R_2 + 5R_1,\quad R_3 + 3R_1
+$$
+
 
 3. Normalize $R_2$:
-   $$ R_2 \rightarrow \frac{3}{4}R_2 $$
+   
+$$
+R_2 \rightarrow \frac{3}{4}R_2
+$$
+
 
 4. Eliminate below again:
-   $$ R_3 - 8R_2 $$
+   
+$$
+R_3 - 8R_2
+$$
+
 
 Final REF:
 
@@ -206,7 +222,11 @@ $(x, y, z) = (5 - 2t,\ 3 + t,\ t)$
 ### ❌ 3. No Solution
 
 - A row like:
-  $$ [0 \quad 0 \quad 0 \mid c] \quad \text{where } c \neq 0 $$
+  
+$$
+[0 \quad 0 \quad 0 \mid c] \quad \text{where } c \neq 0
+$$
+
 - This represents a contradiction (e.g., $0 = 5$).
 - System is **inconsistent**.
 

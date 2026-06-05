@@ -49,9 +49,9 @@ This note formalizes the distinctions between different classes of functions inv
   - Exponential: Variable in exponent → $b^x$
 
 - **Growth Comparison**:
-  $$
-  \log x \ll x \ll x^2 \ll x^x \ll 2^x \ll x^{x^x}
-  $$
+$$
+\log x \ll x \ll x^2 \ll x^x \ll 2^x \ll x^{x^x}
+$$
 
 ---
 

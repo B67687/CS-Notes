@@ -9,11 +9,11 @@ Slicing extracts a **subset of elements** from sequences (like Lists, Strings, T
 $$
 \text{seq} \space
 [
-    \underbrace{\text{start} \vphantom{\text{stop}}}_{\text{inclusive}}
-    :
-    \underbrace{\text{stop}}_{\text{exclusive}}
-    :
-    \underbrace{\text{step}}_{\text{jump size}}
+\underbrace{\text{start} \vphantom{\text{stop}}}_{\text{inclusive}}
+:
+\underbrace{\text{stop}}_{\text{exclusive}}
+:
+\underbrace{\text{step}}_{\text{jump size}}
 ]
 $$
 
