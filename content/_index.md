@@ -5,7 +5,7 @@ toc: false
 
 Welcome to my knowledge base — a collection of notes on **Computer Hardware**, **Mathematics**, and **Software Engineering**.
 
-{{< cards >}}
+{{< cards cols="2" >}}
 {{< card link="docs/hardware" title="Hardware" subtitle="Logic circuits, computer architecture, digital design" icon="chip" >}}
 {{< card link="docs/math" title="Mathematics" subtitle="Linear algebra, discrete maths, boolean algebra" icon="variable" >}}
 {{< card link="docs/software" title="Software" subtitle="Python, Verilog, Git, algorithms" icon="code" >}}
