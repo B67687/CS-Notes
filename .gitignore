@@ -26,6 +26,29 @@ __pycache__/
 # Keep Notes — personal lists, not CS notes (not converted to site anyway)
 hugo-content/Obsidian-Notes-I-Wrote/Miscellaneous/Keep Notes/
 
-# Windows
-audit-folder-quality.ps1
+# Agent workflow infrastructure (not part of the Hugo site)
+.claude/
+.opencode/
+.pi/
+commands/
+propagated/
+workflow.d/
+workflow-state.json
+AGENTS.md
+CLAUDE.md
+buglog.json
+opencode-agent-system.md
+opencode.json
+topic-insights.md
+git-github-best-practices.md
+.cleanup-protect
+docs/workspace-system-overview.md
 sync-from-hub.ps1
+audit-folder-quality.ps1
+meta/
+
+# Hugo-content — old attempt artifacts not used by the site
+hugo-content/Hugo-Half-Failed-Implementation/
+
+# PNG images in vault (not used on the site)
+hugo-content/Obsidian-Notes-I-Wrote/Miscellaneous/**/*.png
