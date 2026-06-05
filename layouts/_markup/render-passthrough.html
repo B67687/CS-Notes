@@ -1,0 +1,4 @@
+{{- /* Override Hextra's render hook to avoid transform.ToMath. Instead, output
+raw LaTeX and let client-side KaTeX render it. */ -}} {{- $.Page.Store.Set
+"hasMath" true -}} {{- if eq .Type "block" -}} {{ .Inner }} {{- else -}} {{
+.Inner }} {{- end -}}

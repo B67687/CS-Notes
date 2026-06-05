@@ -1,5 +1,5 @@
 baseURL = "https://b67687.github.io/CS-Notes/"
-title = "Namikaz Notes"
+title = "Nacai's CS Notes"
 theme = "hextra"
 defaultContentLanguage = "en"
 
@@ -11,10 +11,14 @@ defaultContentLanguage = "en"
   displayUpdatedDate = true
   dateFormat = "2006-01-02"
 
+  # KaTeX client-side rendering (needed because transform.ToMath is unavailable)
+  [params.math]
+    engine = "katex"
+
   # Hextra specific
   description = "Computer Science, Hardware, and Mathematics notes"
   navbar.display = true
-  navbar.title = "Namikaz Notes"
+  navbar.title = "Nacai's CS Notes"
 
   # Edit URL (GitHub)
   editURL.base = "https://github.com/B67687/CS-Notes/edit/main/content"
@@ -45,7 +49,12 @@ defaultContentLanguage = "en"
     [markup.goldmark.renderer]
       unsafe = true  # Allow raw HTML in markdown
 
-  # Math rendering
+  # Math rendering — Hextra uses passthrough + Hugo's transform.ToMath
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$']]
+      inline = [['$', '$']]
   [markup.math]
     engine = "katex"
 

@@ -1,5 +1,5 @@
 ---
-title: "Namikaz Notes"
+title: "Nacai's CS Notes"
 toc: false
 ---
 
