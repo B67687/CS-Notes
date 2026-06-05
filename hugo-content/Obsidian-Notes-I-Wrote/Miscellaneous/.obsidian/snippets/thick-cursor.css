@@ -1,0 +1,14 @@
+/* Force thick cursor in CodeMirror editor */
+.cm-editor .cm-cursor {
+  background-color: black !important; /* Cursor color */
+  width: 3px !important;              /* Cursor thickness */
+  border-left: none !important;       /* Remove default border */
+  opacity: 1 !important;              /* Ensure visibility */
+  z-index: 10 !important;             /* Ensure it's above selection layers */
+}
+
+/* Optional: force visibility even when unfocused */
+.cm-editor.cm-focused .cm-cursor {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,501 @@
+>>> Create a Restore point for future rollback
+
+[Windows Backup] 
+
+[Go into UEFI to tweak firmware settings]
+> Restart Computer > Press Relevant Key to Enter UEFI
+
+[Keep Windows Up to Date]
+> Settings > Windows Updates
+
+[Flush dns]
+> CMD > ipconfig /flushdns
+
+[Prefer Using Winget to Get Apps]
+
+[Check Disk Health]
+> In CMD: wmic diskdrive get model, status
+> Download CrystalDiskInfo to Check
+
+[Update all drivers]
+> Download Intel Driver and Support Assistant
+
+[Check Graphics Drivers]
+> dxdiag
+
+[Tweak Through Wintoys]
+> Download Wintoys
+
+[Remove Startup Apps that you don't need]
+> Task Manager > Startup Apps > Disable those you don't need
+> Apps > Startup,  for more
+
+[Tweak Through AutoRuns]
+- Logon > Disable Installed Apps
+- Internet Explorer > Disable Everything
+- Scheduled Tasks > Disable Installed Apps
+
+[Download the Relevant Graphics Card Software]
+> Do the relevant optimisations for NVIDIA / AMD / Intel
+
+[Delete temporary files]
+> Disk Cleanup
+
+[Set Custom Page Files] 
+> System Properties > Performance  > Advanced > Virtual Memory > Turn off automatically manage paging file for all drives > Custom
+    >> Initial: 512
+    >> Maximum: 2048
+> Set
+
+[Remove Memory Compression - On Systems with 32GB Ram or More] 
+fsutil behavior set MemoryUsage 2
+
+[Disable Last Accessed - Deprecated Feature in Most Apps]
+fsutil behavior set DisableLastAccess 1
+
+[Delete files in %temp%, temp, and prefetch]
+> Windows + R > type in %temp%, temp, or prefetch > Ctrl + A > Delete
+
+[Do system Scans]
+Go to CMD or PowerShell in Administrator Mode
+
+[Check for errors in entire hard drive and fix them]
+> chkdsk /f > Restart PC
+
+[Check for only windows system file corruption and fix them using]
+> sfc /scannow
+
+[Check for Windows Images File Corruption]
+- Check for errors first using
+     > Dism /Online /Cleanup-Image /CheckHealth
+
+- If No corruption detected
+    > change /CheckHealth to /ScanHealth
+
+- If corruption detected
+    > change /CheckHealth to /RestoreHealth 
+
+[Do a fast/full malware scan]
+> Windows Defender > Virus  & Threat Protection > Scan Options
+
+[Turn Off Always On USB]
+
+[Turn Off Keyboard Backlight]
+
+[Set Refresh Rate to 60Hz]
+
+[Turn Off HDR]
+
+[Set Color Profile to Standard]  
+
+[Exit OneDrive Syncing]
+
+[Create Restore Point]
+
+[Turn Windows Features Off]
+- .NET Framework 3.5 (includes .NET 2.0 and 3.0)
+- .NET Framework 4.8 Advanced Services
+- Legacy Components
+- Media Features
+- Print and Document Services
+- Recall
+- SMB 1.0/CIFS File Sharing Support
+- Windows PowerShell 2.0
+- Work Folders Client
+
+[Audit Services]
+--- [Q] means Safe to Disable unless using Enterprise Features on Laptop
+--- [D] means Disable
+
+Otherwise Switch to Manual
+ 
+- services.msc
+
+[A]
+----
+    > AVCTP Service
+
+[B]
+----
+    > Bluetooth Audio Gateway Service
+    > Bluetooth Support Service
+
+[C]
+----
+Q > Certificate Propagation
+D > Clipboard User Service
+    > Connected Devices Platform Service
+D > Connected User Experiences and Telemetry
+
+[D]
+----
+    > Diagnostics Policy Service
+D > Distributed Link Tracking Client
+D > Downloaded Maps Manager
+
+[E] 
+----
+D > Elabs AI Virtual Tap-to-connect API Service
+    > Elevoc Control Service
+D > Elliptic Labs Smart Sensor Platform System Service 
+D > Energy Saver Service queencreek 
+[F]
+----
+D > Fax
+D > File History Service
+
+[G]
+-----
+D > Geolocation Service
+
+[I]
+----
+    > Infrared Monitor Service 
+D > Intel(R) Dynamic Tuning Technology Telemetry Service
+D > Intel(R) Innovation Platform Framework Service
+D > Intel(R) System Usage Report Service SystemUsageReportSvc_QUEENCREEK
+Q > Internet Connection Sharing
+Q > Inventory and Compatibility Appraiser
+    > IP Helper 
+
+[L]
+----
+D > Lenovo Fn and function keys service
+D > Lenovo Sensor Fusion Service
+D > Lenovo Vision Service
+
+[M]
+----
+Q > Microsoft iSCSI Initiator Service
+
+[N]
+----
+Q > Net.Tcp Port Sharing Service
+Q > Net Logon
+
+[O]
+-----
+Q > Offline Files
+
+[P]
+----
+    > Parental Controls
+    > Payments and NFC/SE Manager 
+D > Phone Service
+    > Print Spooler
+    > Program Compatibility Assistant Service
+
+[R]
+----
+    > Recommended Troubleshooting Service
+    > Remote Desktop Configuration
+    > Remote Desktop Services
+    > Remote Desktop Services UserMode Port Redirector
+D > Remote Registry
+D > Retail Demo Service
+D > Routing and Remote Access
+
+[S]
+----
+    > Sensor Service
+Q > Smart Card
+Q > Smart Card Device Enumeration Service 
+Q > Smart Card Removal Policy 
+    > SysMain
+
+[T]
+----
+    > Themes
+
+[W]
+----
+    > Wallet Service
+    > Wi-Fi Direct Services Connection Manager
+    > Windows Image Acquisition
+    > Windows Error Reporting Service
+D > Windows Insider Service
+    > Windows Media Player Network Sharing Service
+    > Windows Search (Fine Tune Instead)
+Q > Work Folders
+    > WSAIFabricSvc
+
+[X]
+----
+    > Xbox Accessory Manager
+    > Xbox Live Auth Manager
+    > Xbox Live Game Save
+    > Xbox Live Networking Service
+
+[Essential Services - DO NOT DISABLE]
+
+Sound
+- AudioEndpointBuilder
+- Audiosrv
+
+Networking
+- BFE
+- Dnscache
+- Dhcp
+- nsi
+- netprofm
+- Wcmsvc
+- WlanSvc
+
+Security and RPC
+- CryptSvc
+- SamSs
+- RpcSs
+- RpcEptMapper
+- DcomLaunch
+
+System Backbone
+- EventLog
+- EventSystem
+- Schedule
+- LSM
+- PlugPlay
+- Power
+- ProfSvc
+- UserManager
+
+Defender and Security Centre
+- WinDefend
+- WdNisSvc
+- SecurityHealthService
+- wscsvc
+
+WMI, used by many apps and diagnostics
+- Winmgmt
+
+Windows Update Orchestrator
+- UsoSvc
+
+USB Insertion
+- ShellHWDetection
+
+UI and Font Rendering
+- FontCache
+- Themes
+- CoreMessagingRegistrar
+
+App Deployment and Elevation
+- Appinfo
+- AppXSvc
+- InstallService
+
+Credential Manager
+- VaultSvc
+
+[Task Scheduler]
+- Disable as needed
+
+[Optimise Visual Settings]
+> sysdm.cpl > Advanced > Performance > Enable Only the Following
+    - Show thumbnails instead of icons
+    - Show windows contents while dragging 
+    - Show edges of screen fonts
+    - Smooth-scroll list boxes
+    - Use drop shadows for Icon labels on the desktop [Disable for Dark Backgrounds]
+
+[Add the necessary folders onto Desktop]
+> Personalisation > Themes > Desktop Icon Settings 
+
+[Disable Unnecessary Start Features]
+> Personalisation > Start
+
+[Turn Off Sticky Keys]
+> Accessibility > Keyboard > Sticky Keys
+
+[Pause Windows Indexing]
+> Win + R > services.msc > Windows Search > Properties 
+    > Startup type > Disabled
+    > Service Status > Stop
+
+[Remove Mouse Acceleration]
+> Settings > Bluetooth & Devices > Mouse
+    -  Disable Enhance Pointer Precision
+    -  Additional Mouse Settings > Pointer Options > Motion > Disable Enhance Pointer Precision
+
+[Disable Resume and Phone Link Features]
+> Settings > Bluetooth & Devices > Mobile Devices
+
+[Turn On U-APSD]: Unscheduled Automatic Power Save Delivery 
+> Device Manager > Network adapters > Properties > Advanced > U-APSD Support > Enabled
+
+[Power Options Terminal Pre-configuration]
+ > Terminal > Run as Administrator
+
+---
+- Find out what power configurations I have
+    > powercfg /a
+
+- Adding Hibernate After Option
+    > REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\238C9FA8-0AAD-41ED-83F4-97BE242C8F20\9d7815a6-7ee4-497e-8888-515a05f02364 /v Attributes /t REG_DWORD /d 2 /f  
+
+- Enable Hibernate
+    > powercfg /hibernate on 
+---
+
+[Power Options Configurations]
+> Control Panel > Hardware and Sound > Power Options 
+
+--- 
+- Disable Fast Startup, Enable Hibernation
+    ... > Change settings that are currently unavailable > Choose what the power buttons do
+
+- Change power button functionality to Sleep/Hibernate
+    ... > Define power buttons > Change when I press power button
+
+- Disable Sleep and Enable Hibernation
+    ... > Edit Plan Settings > Change Advanced Power Settings
+        >> Sleep After: 5 min, 13 min
+        >> System Unattended Sleep Timeout: 5 min, 13 min
+        >> Hibernate After: 19 min, 57 min
+
+--- 
+
+[Re-register StartMenuExperienceHost]
+Get-AppxPackage Microsoft.Windows.StartMenuExperienceHost | Foreach {
+  Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"
+}
+
+[Check for latest updates]
+> Settings > Updates 
+
+[Turn Off Delivery Optimisation]
+> Windows Update > Advanced Options > Delivery Optimisation
+
+[Turn Off Updates Together With Windows Updates]
+> Windows Update > Advanced Options > Receive updates for other Microsoft Products
+
+[Prioritise Apps For Display]
+> Settings > System > Display > Graphics > Add the executable > Set to High Performance
+
+[Cleanup Search Bar]
+> Privacy & Security > Search Permissions
+
+[Turn Off Resume For All Apps and OneDrive]
+> Task Manager > Apps > Resume
+
+[Privacy Settings Turn Off]
+> Anything that you see fit can be kept
+
+[Turn Off Windows Update Advanced Options]
+> Windows Update > Advanced Options
+> Turn Off Delivery Optimisation
+
+[Turn Off Dynamic Lighting]
+> Personalisation > Dynamic Lighting
+
+[Game Settings]
+> Untoggle Game Bar
+> Untoggle Captures
+> Keep Game Mode On
+
+[Change DNS to Google DNS or Cloudflare DNS]
+> 8.8.8.8, 8.8.4.4
+> 1.1.1.1, 1.0.0.1
+
+[Display AppX Packages that are installed]
+> Get-AppxPackage | Select Name, PackageFullName | Out-Host
+
+[OneDrive Enable Syncing]
+
+[Indexing Options]
+
+--- Change Drives to Only Index File Properties
+> Select Drive > Properties > Deselect "Allow files ... in addition to properties "
+
+> Indexing Options
+
+--- Tweak Indexing Folders
+> Modify > Users > [Username] > Select Relevant Folders
+> Miniconda Select env
+
+--- Tweak File Types Selected
+> Advanced > Select File Types that are relevant
+
+--- Disable Content Indexing For Individual FileTypes
+> How should this file be indexed? > Index Properties Only
+
+[Run Chris Titus Windows Utility] 
+- We run this at the end because it makes a lot of settings unable to be manually disabled without Group Policy Editor
+
+> Search for Chris Titus Tech's Windows Utility > Github Page > Scroll Down on README > Launch the Command on CMD or Powershell as Administrator > Select Recommended Tweaks 
+
+- Look through them one by one so you know what is happening, research what you don't know, do not blinding apply patches that you do not know
+
+> Apply Tweaks
+
+[Registry Editor Tweaks]
+--- EnableTcpFastOpen
+> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge
+> TabDiscardingEnabled: 1
+> EnableTcpFastOpen: 1
+
+--- Remove popup for MS-Gamingoverlay
+> HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR 
+> AppCaptureEnabled: 1
+
+--- Disable Lock Screen Overlay
+> HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization
+> NoLockScreen: 1
+
+--- Hark Disk Power Options Tweaks
+> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\
+
+> ...0012ee47-9041-4b5d-9b77-535fba8b1442
+
+> Change the below Attributes to 2
+
+----- Enable AHCI Link Power Management - HIPM/DIPM
+> ...\0b2d69d7-a2a1-449c-9680-f91c70521c60 
+
+----- Enable Secondary NVMe Idle Timeout
+> ...\ d3d55efd-c1ff-424e-9dc3-441be7833010
+
+----- Enable Primary NVMe Idle Timeout 
+> ...\ d639518a-e56d-4345-8af2-b9f32fb26109
+
+----- Enable AHCI Link Power Management - Adaptive
+> ...\ dab60367-53fe-4fbc-825e-521d069d2456 
+
+> Control Panel > Hardware and Sound > Power Options > Change plan settings (of your active power plan) > Change advanced Power Settings > Hard disk > ACHI Link power Management and set it to Lowest. 
+- If that is not an option, change it to HIPM+DIPM
+
+--- Maximise Service Host Split Threshold
+> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+>> SvcHostSplitThresholdInKB
+
+--- Disable Throttle Network Bandwidth
+> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft
+    >> Create Folder: Psched
+        - NonBestEffortLimit: 0
+
+--- Tweak CPU Maximum Memory
+> Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl 
+- Change Win32PrioritySeparation to 26 (Hexadecimal), 38 (Decimal)
+
+--- Tweak GPU Scheduling
+> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games 
+    - GPU Priority: 8
+    - GPU Priority: 6 
+    - Scheduling Category: High
+    - SFIO Priority: High
+
+--- Tweak Network Throttling Index
+> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile 
+    - NetworkThrottlingIndex: ffffffff
+
+--- Disable Seach Box Suggestions
+> HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer 
+    - DisableSearchBoxSuggestions: 1
+
+--- Verbose Status for Startup/Shutdown
+> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    - VerboseStatus: 1
+
+--- Disable Wait for Idle State
+> HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize
+    - StartupDelayInMSec: 1
+    - WaitForIdleState: 1

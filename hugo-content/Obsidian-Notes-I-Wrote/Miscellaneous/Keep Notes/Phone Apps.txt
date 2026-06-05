@@ -1,0 +1,80 @@
+- addyio
+- Aegis
+- AnkiDroid
+AppVerifier
+- Audile
+- Binary Eye
+Booming Music
+BreezyWeather
+- Calc You
+- Canta
+- Cromite
+CoMaps
+- DBS Digibank
+- DBS Paylah
+- Dimmer
+- Discreet Launcher
+- Droidify
+Easy Notes
+- ExifEraser
+FolderSync
+- FlorisBoard
+- Fossify Calendar
+- Fossify Camera
+- Fossify File Manager
+- Fossify Keyboard
+- Fossify Gallery
+- Fossify Messages
+- Fossify Phone
+- GMaps WV
+- Image Toolbox
+- Infinity+
+- Instagram Revanced by FiorenMas
+Installer X Revived
+KernelSU Next
+- K-9 Mail
+KDE Connect
+- KeePassDX
+- LibreTube
+- LocalSend
+LTE Cleaner
+Mini Metro
+- MuPDF Viewer
+MuPDF Mini
+Niagara Launcher
+- NTU Pass
+- Obsidian
+- Obtainium
+- OCBC
+- OneNS
+- OpenCamera
+- OpenTune
+- Overmorrow
+- PixelPlay
+Rider
+RikkaHub
+Seal
+- Shelter
+- Shizuku
+- SimpleLogin
+- SimplyGo
+- Singpass
+- Steam
+- Syncthing-Fork by Catfriend1
+- Telegram
+- Tuta
+Trillium Notes
+- Whatsapp
+- 微信
+- 古文岛
+- 万年历（wnl(dot)cc）
+- 今日头条
+- 哔哩哔哩
+- 抖音
+- 抖音精选
+- 拼多多
+- 汽水音乐
+- 淘宝
+- 知源中医
+- 讯飞输入法
+- 识典古籍

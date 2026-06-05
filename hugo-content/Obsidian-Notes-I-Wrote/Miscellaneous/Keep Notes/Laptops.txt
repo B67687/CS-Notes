@@ -1,0 +1,55 @@
+Dell Inspiron 3264 AIO
+> Model Name: Yoga Slim 7 14ILL10
+> Serial Number: MP2SEQQK
+> CPU: Intel Core i5-7200U
+> RAM: 8GB
+> Storage: 1TB HDD
+> Display: IPS Pane
+> Battery: 4 CELL
+> OS: Windows 11 Home
+> Service Tag: 2TBWXH2
+> Express Service Code: 6127095926
+
+
+LG 32LV3730 LED TV
+> Model Number: 32LV3730.ATC
+> Serial Number: 109INXJ3Q418
+> Date: 15/01/2020
+
+
+Microsoft Surface Laptop Go 1
+> OS Edition: Windows 11 Home
+> Serial number: 018093704266
+> CPU: Intel Core i5-1035G1 
+> GPU: Intel UHD Graphics 
+> RAM: 8 GB, LPDDR4x 
+> Storage: 128 GB SSD 
+> Display: 12.4” PixelSense
+> Resolution: 1536 x 1024
+
+
+Dell Inspiron 15 3520
+> Intel Core i7
+
+Honor Magicbook Pro 14
+> OS: Windows 11 Home
+> CPU: Core Ultra 9 285H
+> GPU: Intel Arc 140V 
+> Display: 14.6"
+> Resolution: 3120x2080
+> Color: Starry Gray
+> RAM: 32GB, LPDDR5x
+> Storage: 1TB SSD
+
+
+Lenovo Yoga Slim 7i Aura Edition 14” Intel
+> OS: Windows 11 Home 
+> Model Name: Yoga Slim 7 14ILL10
+> Serial Number: MP2SEQQK
+> CPU: Intel Core Ultra 5 228V
+> GPU: Intel Arc 130V, 16GB
+> RAM: 32GB, LPDDR5x
+> Storage: 512 GB SSD
+> Display: 14.0" WUXGA OLED TS
+> Battery: 4 CELL
+

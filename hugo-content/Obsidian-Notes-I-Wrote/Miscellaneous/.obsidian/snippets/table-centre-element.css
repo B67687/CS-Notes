@@ -1,0 +1,11 @@
+.markdown-preview-view table {
+  table-layout: auto !important;          /* Let content size columns */
+  width: auto !important;                /* Prevent full-width stretching */
+  max-width: 100% !important;            /* Allow responsiveness */
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  padding-bottom: 1em !important;        /* Simulate one <br> below last line */
+  vertical-align: top !important;        /* Align content to top of cell */
+}

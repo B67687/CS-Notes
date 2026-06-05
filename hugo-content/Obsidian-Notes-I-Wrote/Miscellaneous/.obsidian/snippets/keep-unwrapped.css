@@ -1,0 +1,3 @@
+.markdown-preview-view table td:nth-child(2) {
+  white-space: nowrap;
+}

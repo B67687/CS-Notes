@@ -1,0 +1,81 @@
+baseURL = "https://B67687.github.io/CS-Notes/"
+title = "Namikaz Notes"
+theme = "hextra"
+defaultContentLanguage = "en"
+
+# Hugo extended is required for Hextra
+# https://gohugo.io/installation/linux/#build-from-source
+
+# Math rendering (KaTeX built into Hextra)
+[params]
+  displayUpdatedDate = true
+  dateFormat = "2006-01-02"
+
+  # Hextra specific
+  description = "Computer Science, Hardware, and Mathematics notes"
+  navbar.display = true
+  navbar.title = "Namikaz Notes"
+
+  # Edit URL (GitHub)
+  editURL.base = "https://github.com/B67687/CS-Notes/edit/main/content"
+
+  # Footer
+  footer.display = true
+
+[params.theme]
+  # dark | light | system
+  default = "system"
+  displayToggle = true
+
+# Markdown rendering
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      wrapStandAloneImageWithinParagraph = false
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown
+
+  # Math rendering
+  [markup.math]
+    engine = "katex"
+
+  # Syntax highlighting
+  [markup.highlight]
+    anchorLineNumbers = false
+    codeFences = true
+    copyable = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNumbers = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+# Content directory
+contentDir = "content"
+
+# Output
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+# Media types
+[mediaTypes]
+  [mediaTypes."text/html"]
+    suffixes = ["html"]
+
+# Theme is used via theme = "hextra" above (git submodule in themes/hextra/)
+# Hugo Modules approach is not needed when using themes/ directory

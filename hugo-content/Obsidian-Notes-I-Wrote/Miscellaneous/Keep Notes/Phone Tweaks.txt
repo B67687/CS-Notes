@@ -1,0 +1,2 @@
+> Developer Options
+> Animation Scale: x0.5

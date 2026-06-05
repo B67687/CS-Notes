@@ -1,0 +1,4 @@
+/* Global line width override */
+body {
+  --file-line-width: 728px !important;
+}

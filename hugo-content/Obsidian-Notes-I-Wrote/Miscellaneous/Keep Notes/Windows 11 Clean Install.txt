@@ -1,0 +1,11 @@
+Take Note of Bitlocker Recovery Key
+Turn Off Bitlocker
+Turn Off Secure Boot
+Delete All Other Partitions 
+
+Add skip network connection options
+> reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+> shutdown /r /t 0
+
+Add Local Only Account
+> start ms-cxh:localonly

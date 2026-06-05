@@ -1,0 +1,293 @@
+{
+  "main": {
+    "id": "e96dd38fa306aedb",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d38af18fa4e8fe0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac708afb853667cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math/Computer Science/🧮 Boolean Algebra.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "🧮 Boolean Algebra"
+            }
+          },
+          {
+            "id": "6e029d5caefefc6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Logic Gates/🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state"
+            }
+          },
+          {
+            "id": "e6d57874dd15b3bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Logic Gates/🧠 Why Binary Multiplication Allows Row Copying.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "🧠 Why Binary Multiplication Allows Row Copying"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdf214fa7b78bbac",
+    "type": "split",
+    "children": [
+      {
+        "id": "db5236cff95a704e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec88a7639b95d6f3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "83ff91e3525f494b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "NAND",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e52f279c3a8bb06d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 351.5
+  },
+  "right": {
+    "id": "e2d95e94bce6334f",
+    "type": "split",
+    "children": [
+      {
+        "id": "93f66dd5491bd101",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "177acbdc865d67df",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Hardware/Logic Gates/🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state"
+            }
+          },
+          {
+            "id": "1a3f6e25d2b87aa3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Hardware/Logic Circuits/🧠 Functional vs Semantic Equivalence in Logic Design.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 🧠 Functional vs Semantic Equivalence in Logic Design"
+            }
+          },
+          {
+            "id": "217b4d106d78c3b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "90ade9f4018878bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hardware/Logic Gates/🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 🔍 Exclusive Operations — OR, NOR, XOR, XNOR, and why AND hoesn't have an exclusive state"
+            }
+          },
+          {
+            "id": "186fd27e586e1d85",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false
+    }
+  },
+  "active": "6e029d5caefefc6d",
+  "lastOpenFiles": [
+    "Hardware/Logic Circuits/🧠 Functional vs Semantic Equivalence in Logic Design.md",
+    "Hardware/Logic Gates/🔁 Active High vs Active Low – What and Why.md",
+    "Hardware/Logic Circuits/💡 How LEDs Emit Light — Material Physics and Optical Engineering.md",
+    "Hardware/Logic Circuits/⚛️ Silicon vs Other Semiconductor Materials.md",
+    "Hardware/Logic Circuits/🔌 Logic Power Rails — Vcc and Ground.md",
+    "Hardware/Logic Circuits/🔁 Diode Directionality and Breakdown Behavior.md",
+    "Hardware/Untitled.md",
+    "Hardware/Logic Circuits",
+    "Hardware/Logic Circuits/🔁 PN Junction Diode — Directionality and Material Motivation.md",
+    "Hardware/Number Representations and Properties/🧮 Parity Bits in Digital Systems.md",
+    "Hardware/Number Representations and Properties/🧠 ASCII — The Backbone of Text Encoding.md",
+    "Hardware/Logic Gates/Untitled.md",
+    "Hardware/Number Representations and Properties/🔑 TWO’S COMPLEMENT—THE ONE-PAGE TRUTH CARD.md",
+    "Hardware/Logic Gates/🚫 Logical NOT Notation — Overline vs Symbol.md",
+    "Hardware/Logic Gates/🧮 Combined Addition–Subtraction Circuit (4-bit).md",
+    "Hardware/Logic Gates/🔀 XOR Gate — Semantic and Functional Overview.md",
+    "Hardware/Binary Operations/⚠️ Overflow Detection in 2’s Complement Arithmetic.md",
+    "Hardware/Logic Gates/⚡ Carry Look-Ahead Adder (CLA).md",
+    "Hardware/Computer Architecture/⏱ Timing Diagrams in Digital Electronics.md",
+    "Hardware/Binary Operations/✖️ Signed Multiplication — Core Principles and Semantic Architecture.md",
+    "Hardware/Binary Operations/➕ BCD Addition — Correction Logic and Carry Propagation.md",
+    "Hardware/Logic Gates/🔁 Full Adder Carry Logic — Minimal vs Exhaustive.md",
+    "Hardware/Logic Gates/🔁 Full Adder Sum Logic — XOR Associativity Insight.md",
+    "Hardware/Logic Gates/🔢 Half Adder & Full Adder Logic Overview.md",
+    "Hardware/Binary Operations/💥 Integer Overflow.md",
+    "Math/Discrete Maths/🔁 Method of Complements - What and Why.md",
+    "Hardware/Number Representations and Properties/🔁 Complements Form Conversion — Binary Forms Derivation.md",
+    "Math/Discrete Maths/Logic",
+    "Hardware/Computer Architecture",
+    "Hardware/Binary Operations",
+    "Everything.base",
+    "Software/Python",
+    "Software",
+    "Untitled 3.base",
+    "Seasons/desktop.ini",
+    "Untitled 2.base",
+    "Hardware/Logic Gates/full-adder-circuit-diagram-1.png",
+    "Hardware/Logic Gates/full-adder-circuit-diagram.png",
+    "Hardware/Logic Gates/full-adder-circuit-diagram.svg",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "indentity.svg"
+  ]
+}

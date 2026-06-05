@@ -1,0 +1,13 @@
+{
+  "enabledCssSnippets": [
+    "bigger-latex",
+    "bold-links",
+    "paper-background-light",
+    "keep-unwrapped",
+    "table-auto-size",
+    "table-centre-element",
+    "thick-cursor",
+    "wider-margins"
+  ],
+  "cssTheme": "Primary"
+}

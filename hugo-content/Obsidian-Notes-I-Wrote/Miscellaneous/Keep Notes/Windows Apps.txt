@@ -1,0 +1,142 @@
+AltSnap
+Amazon Rainforest Theme
+- Android SDK Platform Tools
+Anki
+Audacity
+- Auto Dark Mode
+AutoHotKey
+Autoruns
+BCUninstaller 
+Bitwarden
+哔哩哔哩
+Bing Wallpaper
+Blender
+Bloxstrap
+Chatbox
+Chocolatey
+Cloudflare Warp
+Compress JPEG
+Core Temp
+- Crucial Storage Executive
+- CrystalDiskInfo
+- CrystalDiskMark
+Cursor
+DarkTable
+Davinci Resolve
+Ditherboy
+Discord
+Dolby Access
+Dynamic Theme
+Intel Graphics Command Centre
+- Intel Graphics Software
+- Intel Driver and Support Assistant
+EarTrumpet
+Epic Games Launcher
+- Everything
+Fan Control
+Files Community
+Filelight
+Firefox
+Flow Launcher
+Fluent Info
+Fluent Terminal
+Fluent Search
+ffmpeg
+Fluent Flyouts
+- FreeFileSync
+GIMP
+- Git
+- Github Desktop
+Geek Uninstaller
+Google Chrome
+Handbrake
+HitmanPro
+HEVC Extensions
+- HWInfo
+JDownloader 2
+Kate
+- KeePassXC
+Keypirinha
+Keyviz
+Kaspersky Virus Removal Tool
+Kdenlive
+Krita
+Lenovo Migration Assistant
+Lenovo PSREF for Windows
+- LegionToolkit
+- Lenovo System Update
+- Lenovo Vantage
+- LibreOffice
+- LocalSend
+Macro recorder
+MalwareBytes
+MacType
+- Microsoft Mouse and Keyboard Centre
+- Miniconda
+Nahimic
+NeoVIM
+Nextcloud 
+NodeJS
+Notepads
+Notion 
+Nora
+Norton Power Eraser
+OBS
+Obsidian
+Ollama
+Oh My Posh
+- OneDrive
+OnlyOffice
+- OO Shutup
+OP Autoclicker
+pCloud
+PDFgear
+- Plexity
+PotPlayer
+PowerShell
+PowerToys
+Process Manager
+Proton VPN
+- Python
+qBittorrent
+Quick JPG to PDF
+Quicklook
+Rainmeter
+- Revo Uninstaller
+- Roblox
+- SanDisk Dashboard
+- ScreenBox Media Player
+- Syncthing
+- SysInternals Suite
+Shui
+Simply Desktops
+Spotify
+Stirling PDF
+Scrcpy
+Steam
+Sumatra PDF
+- SvgThumbnailExtensions
+TeraCopy
+Thunderbird
+- TreeSize Free
+Tor Browser
+Translucent TB
+Ueli
+- UniGetUI
+- Unigram
+VLC media players
+Voidstrap
+VSCode
+- VSCodium
+- WhatsApp
+- Wino Mail
+Windows App
+- Wintoys 
+WizTree
+有道词典翻译
+讯飞输入法
+
+
+ winget search
+ winget install
+ winget upgrade --all

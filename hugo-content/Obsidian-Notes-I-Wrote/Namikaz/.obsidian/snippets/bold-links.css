@@ -1,0 +1,27 @@
+/* Bold and Remove Underline */
+
+/* Read Mode (Preview) */
+.markdown-preview-view a {
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Edit Mode (Live Preview) */
+.cm-s-obsidian span.cm-link {
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Hover Effects */
+
+/* Read Mode (Preview) */
+a.internal-link,
+.cm-s-obsidian span.cm-link.internal-link {
+  color: var(--text-accent);
+}
+
+/* Read Mode (Preview) */
+a.external-link,
+.cm-s-obsidian span.cm-link.external-link {
+  color: var(--text-muted);
+}

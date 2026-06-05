@@ -1,0 +1,234 @@
+整数 - Integer
+合数 - Composite number
+质数、素数 - Prime number
+小数 - Decimal
+小数点 - Decimal point
+四舍五入 - Rounding (up or down), Round to the nearest
+分数 - Fraction
+分子 - Numerator
+分母 - Denominator
+因数、约数 - Factor, Divisor
+公因数、公约数 - Common factor, Common divisor
+最大公约数 - Greatest Common Divisor (GCD), Greatest Common Factor (GCF)
+倍数 - Multiple
+公倍数 - Common multiple
+最小公倍数 - Least Common Multiple (LCM)
+互质数 （coprime） - Coprime, Relatively prime
+括号 - Parentheses, Brackets
+加 - Add, Plus
+加数 - Addend, Term (in addition)
+和 - Sum, Total
+减 - Subtract, Minus
+减数 - Subtrahend
+被减数 - Minuend
+差 - Difference
+乘 - Multiply, Times
+乘数 - Multiplier, Factor
+积 - Product
+除 - Divide
+除数 - Divisor
+被除数 - Dividend
+商 - Quotient
+余数 - Remainder
+整除 - Divisible (by)
+除尽 - Divide exactly, Divide evenly
+运算 - Operation, Calculation, Arithmetic
+甲乙丙丁 - A, B, C, D
+同级运算 - Same-level operations, Operations of the same priority
+异级运算 - Different-level operations, Operations of different priority
+定律 - Law, Rule, Property, Theorem
+算式 - Mathematical expression, Formula, Arithmetic expression
+加法交换律 - Commutative Law of Addition, Commutative Property of Addition
+加法结合律 - Associative Law of Addition, Associative Property of Addition
+乘法交换律 - Commutative Law of Multiplication, Commutative Property of Multiplication
+乘法结合律 - Associative Law of Multiplication, Associative Property of Multiplication
+代数 - Algebra
+
+Basic Arithmetic (基础算术)
+加法 (jiāfǎ) - Addition
+
+减法 (jiǎnfǎ) - Subtraction
+
+乘法 (chéngfǎ) - Multiplication
+
+除法 (chúfǎ) - Division
+
+数字 (shùzì) - Numbers
+
+整数 (zhěngshù) - Whole numbers
+
+分数 (fēnshù) - Fractions
+
+小数 (xiǎoshù) - Decimals
+
+百分数 (bǎifēnshù) - Percentages
+
+等于 (děngyú) - Equals
+
+大于 (dàyú) - Greater than
+
+小于 (xiǎoyú) - Less than
+
+Geometry (几何)
+点 (diǎn) - Point
+
+线 (xiàn) - Line
+
+直线 (zhíxiàn) - Straight line
+
+曲线 (qūxiàn) - Curve
+
+角 (jiǎo) - Angle
+
+直角 (zhíjiǎo) - Right angle
+
+三角形 (sānjiǎoxíng) - Triangle
+
+正方形 (zhèngfāngxíng) - Square
+
+长方形 (chángfāngxíng) - Rectangle
+
+圆 (yuán) - Circle
+
+周长 (zhōucháng) - Perimeter
+
+面积 (miànjī) - Area
+
+体积 (tǐjī) - Volume
+
+Middle School (初中数学)
+Algebra (代数)
+方程 (fāngchéng) - Equation
+
+一元一次方程 (yī yuán yī cì fāngchéng) - Linear equation
+
+变量 (biànliàng) - Variable
+
+系数 (xìshù) - Coefficient
+
+不等式 (bùděngshì) - Inequality
+
+函数 (hánshù) - Function
+
+线性函数 (xiànxìng hánshù) - Linear function
+
+二次函数 (èr cì hánshù) - Quadratic function
+
+因式分解 (yīnshì fēnjiě) - Factorization
+
+多项式 (duōxiàngshì) - Polynomial
+
+Geometry (几何)
+平行线 (píngxíng xiàn) - Parallel lines
+
+垂直线 (chuízhí xiàn) - Perpendicular lines
+
+相似形 (xiāngsì xíng) - Similar figures
+
+全等形 (quánděng xíng) - Congruent figures
+
+勾股定理 (gōugǔ dìnglǐ) - Pythagorean theorem
+
+圆周长 (yuán zhōucháng) - Circumference
+
+圆面积 (yuán miànjī) - Area of a circle
+
+体积公式 (tǐjī gōngshì) - Volume formulas
+
+Statistics (统计)
+平均数 (píngjūn shù) - Mean
+
+中位数 (zhōngwèi shù) - Median
+
+众数 (zhòngshù) - Mode
+
+数据 (shùjù) - Data
+
+图表 (túbiǎo) - Charts/Graphs
+
+High School (高中数学)
+Advanced Algebra (高等代数)
+矩阵 (jǔzhèn) - Matrix
+
+行列式 (hánglièshì) - Determinant
+
+向量 (xiàngliàng) - Vector
+
+复数 (fùshù) - Complex numbers
+
+对数 (duìshù) - Logarithm
+
+指数函数 (zhǐshù hánshù) - Exponential function
+
+对数函数 (duìshù hánshù) - Logarithmic function
+
+不等式组 (bùděngshì zǔ) - System of inequalities
+
+Trigonometry (三角学)
+正弦 (zhèngxián) - Sine
+
+余弦 (yúxián) - Cosine
+
+正切 (zhèngqiē) - Tangent
+
+余切 (yúqiē) - Cotangent
+
+正割 (zhènggē) - Secant
+
+余割 (yúgē) - Cosecant
+
+弧度 (húdù) - Radians
+
+三角恒等式 (sānjiǎo héngděngshì) - Trigonometric identities
+
+Calculus (微积分)
+极限 (jíxiàn) - Limit
+
+导数 (dǎoshù) - Derivative
+
+积分 (jīfēn) - Integral
+
+微分方程 (wēifēn fāngchéng) - Differential equation
+
+定积分 (dìng jīfēn) - Definite integral
+
+不定积分 (bùdìng jīfēn) - Indefinite integral
+
+泰勒级数 (tàilè jíshù) - Taylor series
+
+Probability and Statistics (概率与统计)
+概率 (gàilǜ) - Probability
+
+随机变量 (suíjī biànliàng) - Random variable
+
+正态分布 (zhèngtài fēnbù) - Normal distribution
+
+标准差 (biāozhǔn chā) - Standard deviation
+
+回归分析 (huíguī fēnxī) - Regression analysis
+
+Pre-University (大学预科数学)
+Advanced Calculus (高等微积分)
+偏导数 (piān dǎoshù) - Partial derivative
+
+多重积分 (duōchóng jīfēn) - Multiple integral
+
+梯度 (tīdù) - Gradient
+
+散度 (sàndù) - Divergence
+
+旋度 (xuándù) - Curl
+
+Linear Algebra (线性代数)
+向量空间 (xiàngliàng kōngjiān) - Vector space
+
+基 (jī) - Basis
+
+特征值 (tèzhēng zhí) - Eigenvalue
+
+特征向量 (tèzhēng xiàngliàng) - Eigenvector
+
+Complex Analysis (复分析)
+解析函数 (jiěxī hánshù) - Analytic function
+
+留数定理 (liúshù dìnglǐ) - Residue theorem

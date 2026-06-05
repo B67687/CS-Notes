@@ -1,0 +1,170 @@
+WHERE IS MY SNAKE
+degoogle
+llm local
+host obsidian notes on github
+chinese terms for math subset etc
+computer use top bar like macbook but for windows
+widgets for windows like macbook
+discrete math
+linux antivirus
+poster
+separate folder for extra paper
+notedown windows settings - personalisation
+do personal assignment that improve my stuff
+use chromite on desktop
+write one on cmos (nmos and pmos)
+possibly contribute to another notes to add markdown
+possibly contribute to florisboard to add chinese
+inplement bst display and redo the circular queue maybe
+quine mclusky method
+Thicker cursor in Obsidian
+XOR XNOR and NXOR difference
+polish inaccuracies of math lessons, fix broken internal links
+windows dock
+find a replacement for google play for OneNS and Singpass
+bring earpiece
+rewrite with csv
+
+tristate and open drain
+
+go through linear algebra test questions
+add my personal files into fluent search
+
+difference of language design in separating declaration and behaviour
+
+fix the dang code for csv
+
+
+continuous assignment (combinatorial, no clocks, input propogated as output directly, "continuously assigned") vs procedural assignment (sequential stuff assigns on clock edge)
+
+Computing
+- digital logic 4 bit adder
+- clock signals
+！- Pseudocode (Use which standard?)
+！- Flowchart Revision
+！- duality principle
+- sort the tutorial questions in a folder, consider translating them to python files instead
+- amazing analogy for division of negative numbers
+- Homework workflow
+- Battleship pseudocode
+
+
+Math
+- Finish Calculus Through Pauls Notes plus calc book
+- use modular arithmetic to reprove the divisibility rules
+！- Finish the online stuff on discrete maths
+- Linear Algebra stuff
+- Proofs
+- Induction
+- Logical Notation
+- Order matters
+- modulo arithmetic
+- for positive integers, these things keep the congruence
+- add / subtract / multiply (cuz of addition) / exponentiation (cuz of multiply)
+- division keeps under prime division, doesnt work when 0 is involved, or sometimes doesnt work when a composite number is involved
+- chinese remainder theorem (coprime and relative primes)
+- application of divisibility rules espeically for 3 and 9, as they use sums of digits
+- harmonic series proof that from anywhere in the series it is diverges, because of the trick that sun with the number of terms up to any number of that denominator (usually twice) will be bigger than the original number we want to get
+- cofactor expansion (lapalce expansion) linear algebra
+- Combinatorics
+- repeats allowed
+- repeats disallowed
+- put inbetween each other circumstance,
+where only happens when either (they are the same) or (one is one more than the other)
+- in a circle
+- indistinguishability-> repeats (division by the distinct combinations of the repeats)
+- complement method for combinatorics
+- stars and bars (distribution) (partition?)
+- probability
+- collate all the examples of how I solved each kind of qn through pictures or through latex, so that I have a reference in the future
+- NFC transfer to diff card
+- find all the required book ads shes to download and download beforehand
+- possibly add outlines to calculus by tom apostol
+- taylor series
+- basel problem
+- missing course in cs education
+- calculus (FINISH IT) (maybe take the course also)
+- hyperbolic trig explanation
+- conic sections
+- general conic sections formula
+- financa (trading, investment blah blah whatever economics)
+- move everything in jupyter notebook to markdown
+
+Random
+- koeqaife/hyprland-material-you
+- wayland compositor
+- QownNote find extensions
+- write a memoir for the philosophical turns that happen in my life, the way i think, the way i didnt note down things, the way i thought, and the way how i suddenly noted down things (because of AI encouragement)
+- apply for giro at onestop
+！- whatsapp local backup with no google account?
+- NFC a card maybe
+- nextcloud + tailscale + raspberry pi + syncthing
+- mixtral
+- simplygo
+- rider? Or nah? Local storage?
+- dbs paylah and dbs banking questionable
+- degoogle Huawei phone
+- download the books that i might need reference to
+- learn mermaid
+- 2fa auth on all accounts
+- find chinese books that are also of those topics
+- Build up repository of music I want to listen to (this.)
+- bring tissue in bag
+- wechat original acc settlement
+- moms icloud
+- git learning
+- the birth of electricity
+- the history of how stuff works
+- digital logic read up on fetch decode execute cycle
+- credit card?
+- self host photos
+- Cryptomator cloud backup
+- antireflective coating?
+- Figure out what cloud service to use for phone backups
+- video compression check
+- Collate all the chats to markdown format that can be ported to obsidian
+- Write a program that generate name based on the basis of shengqi tianyi yannian
+- The best way to count
+- save steam/epic games games
+
+
+- NotebookLLM?
+- autohotkeys good things to do
+- Recovery Drive
+- Find a note that can integrate AI to analyse my notes (notebooklm)
+- find out how to venv and why
+- build a program that builds the bagua from groundup
+
+
+Done
+- Fixed table force fill width in Primary theme
+- Added CSS for line break at the end of every cell in a table
+- Yahoo account check, deleted
+- Correct the wrong idea of identities veing defined by us in math lessons, particularly on partial fractions
+- Finish converting math thing on markdown
+- Digital logic wks
+- Fix formats with Fundamental Laws (Boolean values, Separate row for terms, Translate to LaTeX, Obsidian table centre alignment, stacked equation alignment)
+- Fix NAND and NOR Explanations
+- Backup authenticator code secrets  (backup to external drives as well)
+- record how it looks in google docs
+- multiplexer and decoder digital logic
+- remove bitwarden my beloved
+- bitwarden check for anything missing before removal
+- fix my wrong explanation on MOSFET
+- Improve on BJT CMOS explanation and check for inconsistencies
+- BJT and CMOS (NMOS and PMOS)
+- fix my h2-computing notes
+- finishing all intro to computer thinking and programming
+- maybe change my ntu password to passphrase
+- ebill, how does it work?
+- migrate my math notes from google docs to obsidian
+- why are memory stored in byte sizes
+- share google docs stuff to weiern
+- google keep alternative (Found Another Notes by maltaisn)
+- sync contacts, password, obsidian to phone using syncthing
+- Backup mom's photos onto SSD
+
+
+
+
+ 

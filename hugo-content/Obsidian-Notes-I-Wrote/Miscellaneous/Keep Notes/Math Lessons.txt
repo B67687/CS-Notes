@@ -1,0 +1,294 @@
+NOTE
+- Showing work is important for marking. Some work may be skipped but some are not so obvious to the teacher how you got it so incorporate that into your workings too
+- Repeated Errors mean you dont understand it enough or there is systematic skipping of some crucial step that keeps skipping memory.
+- Read the problem twice, first to get the idea of what is happening and what to find, second to get clearer idea and note down the information given
+- Move on from problems if you are stuck at it, or you may end up spending too much time on it and not enough on problems you can do. However, do write down whatever working you have for those that you cant, extra marks.
+- Rework problems from each topic until you can do them
+
+LIST OF ERRORS:
+- Glossing over working too rapidly thus making calculation mistakes
+- Expand everything, do not skip steps
+- Be sure to look through all possible restrictions.
+i.e. radicands on both the numerator and denominator, 
+denominator radicands cant be equal to zero
+
+TECHNICAL NOTE
+- Restrictions: 
+Denominator != 0
+Radicand >= 0
+In case of radicand in denominator, combined into Radicant > 0
+
+- In something like y = mx + c
+m, c are parameters
+x, y are the variables
+- Whenever requiring to do operations on in both directions, get the required fraction through the first operation and then wont need to recalculate it the second time
+
+Even though in the general sense they are all variables, x,y are variables the whole way through but m, c become constants once they are defined. 
+
+
+ALGEBRA
+
+---- PRELIMINARIES
+--- Integer Exponents
+- Resolve the negative exponents, easier to solve when I their positive forms in the fraction
+- Negative powers flips the fraction (cool trick)
+- Resolve the terms one by one next.
+- Resolve the terms at the numerator and denominator simultaneously by going through the terms one by one
+
+--- Rational Exponents
+- Fractional powers indicate which power it's supposed to get (just realised this so it's very revolutionary for me rn). 
+i.e. 216^(2/3) means the 2nd power of cube root 6, but because I know the cube root is 6 I can easily get the 2nd power
+- Odd exponents always keep the sign (no matter exponentiated or rooted), 
+- Even rooting is positive by convention when a is positive. This is for simplicity. When the negative root is required it has to be explicitly stated.
+- Prime factorising numbers is a good way to check if the term is totally simplified under radicals 
+- Rationalisation with constants: Get the next biggest number
+
+-- Polynomials
+- Be meticulous
+
+-- Radicals
+- Substitution always helps
+
+-- Factoring Polynomials
+- Try making it a polynomial i.e. remove negative powers
+- See the (a+b) and a•b part
+- Try grouping
+- Try substitutions
+- Try quadratic equations
+
+-- Rational Expressions
+- For reversed expressions like (4 - x), easier to just change it to the familiar -(x - 4), by adding the negative sign. Otherwise the general form is ( _ - x)(x + _). 
+- Also just take note of the usuals like the sign of the constant and the bx
+- For big ass fractions, where like the numerator or denominator is wayy too long, just put it side by side instead of with the divisor line, i.e. (1 / 2x^2 + 6x + 1). Easier to write and read. Can be collapsed after it is simplified as well.
+- See if there are constants that can be factored out before working on the rest of the polynomial. Makes it easier later on.
+- Recognising squares like (x^2 - 12x + 36) as (x - 6)^2 is important.
+- When massive cancellation is involved be careful what numerators and denominators are still left, it might be missed if they are mixed in the terms cancelled out.
+- Maintain clarity on the degree of each term, accidental addition may take place otherwise.
+
+-- Imaginery Number
+- Double check if you read the question properly
+- Always take the positive square root by convention as well
+- Negative square roots cant be multiplied together because it gives paradoxical results in the real world.
+- Remember that for subtraction is literally for finding the difference. It is easier to find the absolute difference and then add the direction to the difference.
+- Also double check if need to simplify any further! It does get you sometimes these little things. Pattern recognition is vital.
+- If everything is in addition, then the brackets are ignorable! This feels more important than this section really
+- So the conjugate is defined by convention to keep the rational part in tact so it is easier for us to reason about it, although allowing a more general definition then flipping both the rational and irrational/imaginary part will provide the conjugate. 
+>> i.e. (-8 - i), its complex conjugate is  (-8 + i) but its rational conjugate is (8 + i).  
+>> However keep in mind that order matters to conjugates, so flipping the rational part will give +ve value VS flipping the irrational/imaginary part will give -ve value. 
+>> Therefore for the sake of convention, stick to doing conjugation on the irrational/imaginary part but keep in mind that is a restricted definition used for convenience and meaningful expressions, if you find conjugating the rational part to be helpful in the future do as you please you might find interesting connections too.
+- No matter what however using either the complex or rational conjugate will result in the same denominator, and thus rationalising the denominator
+- LOOKOUT! A conjugate is just simply switching the operator between TWO numbers. But it does not switch up the numbers themselves. For example, the conjugate of  (-9 + 5x) is (-9 - 5x) and NOT (9 - 5x)
+- Other small mistakes that add up includes not writing signs clearly thus causing problems later on when calculating
+
+--- SOLVING EQUATIONS AND INEQUALITIES
+-- Solution and Solution Sets
+- Look out for immediate invalidations like division by 0
+
+-- Linear equations
+- Requiring a good level of mind maths in factoring tbh, like:
+t^2 + 5t + 4 ===> (t + 4)(t + 1) ===> t != -4, -1
+- On the notes of division by 0, it is best to check the conditions that the solution cannot be immediately so that when you check it is obvious, and also leaves a mental note to check if the solution is correct. 
+Sometimes factoring the denominator is required to see the invalid answers.
+- Also special case for squares in the denominator is that it would invalidate 2 answers in cases like these: t^2 - 25, so t = 5 and t = -5 are invalid.
+- Trick here is to make the denominator the same so that you can just solve the numerator no biggie, which does use cross multiplying
+
+-- Applications of Linear Equations
+- Just set up the equation on the relationships described in the question
+- Set the answer as the variable and then revolve the question around it
+- If it gets hard, find the constant and revolve around it
+- As well as define one of the items as a variable and revolve around that too.  Usually make the variable be the unit value, as in it has the lowest ratio out of all the compared items in the questions. This is to make it easier to solve without all the fractions and decimals.
+- A lot of rate equations that go rate.time + rate.time = total
+- Add an extra 0 for decimals man makes it easier to not mess up calculations broo
+- Easier if you put decimals on this as well
+- And they would specify the total something so when you define one of them as x the other will be (total - x)
+
+-- Equations With More Than One Variable
+- If the anchor variable is already isolated just go ahead and remove everything around it from the sides and layer by layer no biggie
+- But if the variable is not isolated seek to isolate
+- Its good to have sight for isolating each term so that grouping multiples in your head that are not actually together on paper is easy to see and bulk division can be done in one-shot. Such as simplifying fractions.
+- Consider using pencil to do simplification division so that its easier to show working without it being permanent. Also easier to spot mistakes in term transfer.
+- Lookout for switching signs when moving terms from one side of an equation to another
+- Also tend to group terms together such that the leading term is positive, it's easier to work with down the road, less mistake-prone as well
+- Also be more careful, isolate the multiplying terms in your head and them put them together to avoid multiplication mistakes
+- Commonly taking the shortest route does involve making the expression too atomised. Therefore it is also encouraged to multiply some terms back together to get a cohesive expression. But ofc, factorising within the cohesive expression is also encouraged to see the relationships between the terms yet maintain the cohesive structure of the expression.
+
+-- Quadratic Equations
+- If fraction, check for invalid solutions.
+- AGAIN, it is useful to always list the invalid solutions of a polynomial before solving for it, i.e. when fractions are involved. Easier to check.
+- When factoring quads with first term having some coefficient be sure to try out all the combinations of its factors before doing the quadratic equation form
+- When factoring check the coefficient plus the variable to reduce mistakes
+- Direct square equations like z^2 +- 36 = 0 can be solved without factoring.
+- Simplify the equations to a familiar form before applying formula by making  it clear.
+- Present the solutions separately
+- If there are no constants in the quadratic equation it definitely has real solutions
+
+-- Applications of Quadratic Equations
+- Just read the question properly and lock in
+- Also preserve the real answer for calculating other figures and not use the approximated value for internal calculations
+- If numbers get too big just put them in uncalculated form
+
+-- Equations Reducible to Quadratic in Form
+- Dont be careless, look out for negative powers so you know the restrictions that the answers can be
+- Keep up with basic arithemetic, dont pride yourself with your intuition too much, use the barebones method for consistency
+- Keeping the negative sign beside constant instead of roots, keep it at the numerator so fractions are already rationalised. So for like x^2 = -(1/2), let it be (-1/2) instead of (1/-2). Easier to root.
+- Use quadratic formula for simple quadratics that cant be factored
+- When collapsing completing the square, read the first term and the sign after it, and then read the last term's base. That would be efficient and mistake-proof.
+- Looking at the terms inside brackets can enable fast-skip-steps
+- As always, making the question into the familiar form is very helpful, dont be to proud and then make mistakes later, we are all human, we see this and we think oh I can do it I have the feeling in my head, and then some simple mistake is made because it slipped our mortal non-machine minds.
+-  Odd roots and powers retain the sign, even if its negative.
+- Also check if the x-form is x or not, you might have forgotten to reduce the substituted x-form to just x.
+
+-- Equations with Radicals
+- Write the restrictions at the start, look at the total and get the restriction, look at the radical and get the restriction. i.e. A + sqrt(A - 2) = 1, since sqrt(A) >= 0 for all B, A <= 1, but A must also be >= 2 so it doesnt go against the square root property
+- Shifting terms to isolate the radical on one side is the way to go
+- Otherwise, substitution can be used
+- If there are more than 1 square root, isolate them one on each side
+- Currently the confirmed meta is the resubstitute and check 
+- THIS METHOD IS NOT FULLPROOF: Analysis and make inequalities happen, such as isolating radicals on one side so i determine that both sides must be > = , so that I can find a suitable condition for x on the outside of radicals. While within radicals I also have to keep the condition such that the radical >= 0.  WHY ITS NOT FULL PROOF: sqrt(4x + 5) - sqrt(2x + 3) = 1
+- However addressing limitations of the equation is always helpful but it does come with some overhead that you address on the way.
+- Therefore consider using the hybrid method of addressing limitations from analysis of the radicals and the equation to weed out answers that are definitely wrong, and then double check the answer that isnt weeded out. This maybe both faster and equally fullproof than just using the substitution method.
+- Watch out for your inequalities, might have the numerator and denominator mixed up when forming them
+- Mouth the expansion with (a = b)^2, catches small mistakes
+
+-- Solving Equations and Inequalities
+- When flipping the inequality signs with double inequalities, remember to also add the multiply constants with negative.
+- Write down the solved calculations first when doing double inequalities, brings the work load off the brain therefore reduces mistakes
+
+
+-- Polynomial Inequalities
+- Arrange the largest term in front as well using the multiplying by negative trick.
+- When negative terms are involved simply simplify the by multiplying by negative and switching the signs. Easy.
+- Ensure that the constant on the side is 0. It doesnt work with other numbers because they dont have the zero-product property like zero does.
+
+y = ax^2 + bx + c
+- Find the roots, 
+- If there is only 1 distinct root (i.e. 2 equal roots), then you can just solve the question trivially, i.e. (x + 3)^2 <= 0 is always False.
+- If its quadratic, finding the curve direction ,by looking at a in ax^2, is enough because there is really only one way for the curve to be drawn that contains the 2 roots
+- Extra confirmation for simple curves is with Vertex y = c - [ (b^2) / 4a ]
+
+- If higher powers are involved, substitution can be done between the roots to tell if its pos. or  neg. but there is a minimal-calculation way to tell.
+
+- Sign change happens at factors that are odd powered, while not when they are even powered.
+
+Leading Term Analysis.
+- When telling whether it start +ve or -ve, check highest powered term in numerator and denominator. Do division but fast way which is using parity characteristics:
+偶 - 偶 = 偶, 奇 - 奇 = 偶
+偶 - 奇 = 奇， 奇 - 偶 = 奇
+- Special case: Same power and coefficient then always start positive, because t^n/t^n = 1 for all n
+
+- For substitution, when finding roots, ignore even-power factors because they will always be positive, focus on the rest odd-power factors
+
+- Finally determine the inequality. 
+
+- Substitution is always foolproof.
+- Interval-Notation wise, write the intervals, then write the brackets (inclusivity)
+- Interval-Notation that excludes a number can be considered convenient but also informal.
+ i.e. R, x != 1
+
+-  Formally, it is explicitly separate as Two-part Notation (with Union sign).
+i.e. (-inf, 1) U (1, inf)
+
+- Watch out for equal sign, might forget that they contribute to the answer 
+i.e. if (y...) <= 0,  and y = 1 is where it equals zero, y = 1 is an answer.
+
+-- Rational Inequalities
+- Leading Term Analysis + Odd-power flip, Even-power keep
+- Write down the initial conditions where factors are in the denominator
+- Whenever finding solutions are involved remember to keep its original form, as in do not multiply or divide by x or you will lose or introduce new solutions.
+- However you can shift the denominator to the side if it proves to be easier to do numerator calculations this way
+
+-- Absolute value equations
+- As long as one side has absolute value sign, it will be split into exactly 2 equations. One positive, one negative. 
+SO even equations where absolute value exists on both sides it ultimately reduces into those 2 parity equations.
+- Make sure of the restriction that an absolute value must be non-negative.
+
+-- Absolute value inequalities
+- If abs(a) >= 1 then it is outside of 1 from 0 both directions. 
+i.e. It's greater than 1 when its positive, or less than -1 when its negative.
+- If abs(b) <= 1, then it is within 1 from 0 in both directions.
+i.e. It's less than 1 when its positive and greater than -1 when its negative.
+
+--- GRAPHING AND FUNCTIONS
+-- Graphing
+y = ax^2 + bx + c,
+- slope is a 
+- y-intercept is c
+- solve for when y = 0 to find its roots
+- take note of the shape of graphs before sketching, or plot points to sketch them
+
+-- Lines
+- slope is the rise over the run, so just ratio of difference of y to difference of x
+- y = y1 + m(x - x1), slope-intercept form is faster than substitution
+- A parallel line would have the same slope
+- A perpendicular line is flipped in all the dimensions of measurement. 
+Which is of opposite slope in direction and in magnitude. It is flipped in all the dimensions of measurement.
+So if a line has a slope of 3/7 then its perpendicular line has a slope of - 7/3.
+
+-- Circles
+- Break down the equation into its readable form, and write down the derived parameters before drawing out the circle, makes less mistakes with double negatives
+- Completing the square is useful for simplifying expressions with extra x in them
+- Look out for the magnitude of the radius and the x,y ordinates they may cancel out each other making the // and right angle rest on its
+
+Drawing the Circle
+- Mark down the coordinates so you dont get confused writing it as negative x or y coordinate
+- Mark the centre. 
+- Then, find the coordinates perpendicular and parallel of the centre, mark the left right with the x coordinates for x-axis and y-coordinates for y-axis. Fill in the rest of the coordinates
+- Remember its (x - h) and (y - k), becareful around negatives again!
+- Take note of squares, both left and right side must be non-negative.
+- Don't skip steps.
+- When collapsing completing the square, read the first term and the sign after it, and then read the last term's base. That would be efficient and mistake-proof.
+
+
+-- The Definition of a Function
+- A FUNCTION is ONE INPUT, ONE OUTPUT. 
+Therefore, when asking if y = x^2 - 1 is a function, one x gives one y.
+Clearly any x will give one y.
+But for y^2 = x - 1, one x will be related to 2 y's, because both the positive and negative value for y will be related to y^2, therefore one x gives two y's. 
+Therefore not a function.
+- Determining if relations are functions, check for x duplicate, then check for y duplicate. If no x duplicate then is a function, if x duplicate but same then still function, but if x duplicate but different then its NOT a function.
+In summary: Check for even powers of y, or absolute values, or hidden even powers of y by factoring
+- Function notation f(x)
+
+Finding Domain
+- It is easier test where it fails than where it doesn't. It doesn't fail normally except for these crucial parts: denominators, radicals
+- Break the question down into its simpler forms, I have been tricked with polynomial inequality before. Remember that polynomial inequality is not the same as linear inequality.
+- i.e. 1/sqrt((x - 5)(x - 3)), requires sqrt((x - 5)(x - 3)) > 0, 
+which is (x - 5)(x - 3) > 0, which is polynomial inequality that is solved differently.
+
+NOTE
+- Difference quotient isn't the whole calculus proof, the calculus proof is the taking the LIMIT of difference quotient. Therefore, cannot assume to differentiate when you are asked to take do the difference quotient.
+
+
+-- Graph Sketching
+y = mx + c, straight line
+- [m] is the gradient, positive go up, negative go down
+- [c] is the y-intercept
+- x-intercept is therefore -c/[m]
+
+y = ax^2 + bx + c
+- [a] determines if the curve is gonna be very steep or gentle
+- [c] - [b]^2 / 4[a] determines its vertex, specifically the [x] part of the vertex.
+If there is no [b], the vertex stays at (0,c). 
+- [c] determines where the curve intercepts the y-axis
+- Find its roots
+
+y = sqrt(x)
+- Quadratic curve lain on its side and halved so only the positive y-values exist. if its sqrt(-x) however, then it would lay on the negative x-values side
+
+y = 1 / x
+- [POSITIVE] Very big y to very small y
+- [NEGATIVE] Very big y to very small y
+
+Sketching Graphs
+- For every graph, if its stepwise, check its low limit and high limit coordinates.  Know its shape, according to what kind of graph is required to draw, find the required points. 
+
+
+
+
+
+
+
+
+
+
+

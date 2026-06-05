@@ -1,0 +1,20 @@
+11/10/2025 - 15/10/2025
+
+Finished Transistors
+
+11/10/2025 or Earlier
+Understood how MOSFETs work
+
+12/10/25 - 13/10/2025
+- Added an Enormous Section on BJTs
+- Added Diodes Section
+- Added Switches Section
+- Added Semiconductors Section
+- Added Doping Section
+- Added P-N Junctuon and Depletion Region
+- Added Side-by-Side P-N Junctions
+- Added Transistor Section
+
+15/10/25
+Refine the MOSFETs section to correct my misunderstanding of the metal part, it is the gate itself
+
