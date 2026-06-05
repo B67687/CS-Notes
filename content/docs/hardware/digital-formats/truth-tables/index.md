@@ -101,9 +101,9 @@ To add more operators or multi-bit logic, duplicate the table structure and exte
 
 ## 🧠 Set-Theoretic Analogy (Optional)
 
-- `A ∧ B` → Intersection: \( A \cap B \)
-- `A ∨ B` → Union: \( A \cup B \)
-- `¬A` → Complement: \( A^c \)
-- `A ⊕ B` → Symmetric Difference: \( A \triangle B \)
+- `A ∧ B` → Intersection: $ A \cap B $
+- `A ∨ B` → Union: $ A \cup B $
+- `¬A` → Complement: $ A^c $
+- `A ⊕ B` → Symmetric Difference: $ A \triangle B $
 
 ---

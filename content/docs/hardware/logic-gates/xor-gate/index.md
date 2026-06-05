@@ -42,7 +42,7 @@ This makes XOR ideal for circuits where inversion is **controlled by a single fl
 |---------------|------------------|----------------------|
 | XOR gates     | Pass-through Y   | Invert Y             |
 | Carry-in      | 0                | 1 (adds the +1)      |
-| Full adders   | Add X and Y'     | Add X and \( \overline{Y} + 1 \) |
+| Full adders   | Add X and Y'     | Add X and $ \overline{Y} + 1 $ |
 
 - XOR gates conditionally invert Y based on `Add/Sub`
 - Carry-in completes the two’s complement transformation

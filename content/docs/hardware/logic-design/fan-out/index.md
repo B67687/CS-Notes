@@ -50,7 +50,7 @@ $$
 
 ## 📜 Typical Values (TTL vs CMOS)
 
-| Logic Family | \( I_{OH} \) | \( I_{IH} \) | Fan-out |
+| Logic Family | $ I_{OH} $ | $ I_{IH} $ | Fan-out |
 |--------------|--------------|--------------|---------|
 | **TTL**      | ~400 µA      | ~40 µA       | ~10     |
 | **CMOS**     | ~1 mA        | ~1 µA        | ~1000+  |
