@@ -82,41 +82,62 @@ def detect_callout_type(raw_title):
     return "default", raw
 
 
-# --- Callout transform (stack-based, supports nesting) ---
+# --- Callout transform (stack-based, supports nesting + bare [!type]) ---
 
 CALLOUT_RE = re.compile(r"^(>*)>\s*(\[!.+?\])\s*$")
 BLOCKQUOTE_RE = re.compile(r"^(>+)\s?(.*)")
+BARE_CALLOUT_RE = re.compile(r"^(\[!.+?\])\s*(.*)$")
+# Lines that naturally end a bare callout section
+SECTION_BREAK_RE = re.compile(r"^(---|#|{{< /callout >}}|{{< callout)")
+
+
+def in_code_block(lines, idx):
+    """Check if line idx is inside a fenced code block."""
+    count = 0
+    for j in range(idx):
+        if lines[j].strip().startswith("```"):
+            count += 1
+    return count % 2 == 1
 
 
 def transform_callouts(text):
-    """Transform Obsidian callouts to Hugo shortcodes, preserving nesting.
+    """Transform Obsidian callouts to Hugo shortcodes.
 
-    Uses a stack to track open callouts by blockquote depth.
-    This correctly handles:
-      > [!outer]          -> opens callout at depth 0
-      > > [!inner]        -> opens callout at depth 1 (nested)
-      > > content         -> inner callout content
-      > outer content     -> outer callout content
+    Handles two forms:
+      1. Blockquote-based:  > [!type] ...  (tracked by blockquote depth)
+      2. Bare:              [!type] ...    (inside existing Hugo shortcodes
+                            or at top level; tracked by section breaks)
     """
     lines = text.split("\n")
     result = []
-    stack = []  # [(depth, hextra_type, title), ...]
+    # Stack: [(depth_or_tag, hextra_type, title)]
+    # depth_or_tag is int for blockquote depth, or "bare" for bare callouts
+    stack = []
 
     i = 0
     while i < len(lines):
         line = lines[i]
-        cm = CALLOUT_RE.match(line)
+        in_code = in_code_block(lines, i)
 
+        # --- Blockquote-based callout > [!type] ---
+        cm = CALLOUT_RE.match(line) if not in_code else None
         if cm:
             depth = len(cm.group(1))
             htype, label = detect_callout_type(cm.group(2))
 
-            # Close any open callouts at >= this depth
-            while stack and stack[-1][0] >= depth:
-                result.append("{{< /callout >}}")
-                stack.pop()
+            while stack:
+                top = stack[-1]
+                # Close if same or shallower depth
+                if isinstance(top[0], int) and top[0] >= depth:
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+                elif isinstance(top[0], str) and top[0] == "bare":
+                    # Bare callouts always close before blockquote ones
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+                else:
+                    break
 
-            # Open new callout
             emoji = CALLOUT_EMOJIS.get(htype, CALLOUT_EMOJIS["default"])
             result.append(
                 '{{{{< callout type="{}" emoji="{}" >}}}}'.format(htype, emoji)
@@ -126,23 +147,83 @@ def transform_callouts(text):
             i += 1
             continue
 
-        # Not a callout line — check blockquote level
+        # --- Bare callout [!type] (without > prefix) ---
+        bm = BARE_CALLOUT_RE.match(line) if not in_code else None
+        if bm and not line.startswith("{{<"):
+            raw_title = bm.group(1)
+            extra = bm.group(2).strip()
+            htype, _ = detect_callout_type(raw_title)
+            # Use extra text as label when present, otherwise use the type name
+            label = extra if extra else raw_title.strip("[]! ")
+
+            # Close any open bare callouts, then blockquote callouts at depth 0
+            while stack:
+                top = stack[-1]
+                if isinstance(top[0], str) and top[0] == "bare":
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+                elif isinstance(top[0], int) and top[0] == 0:
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+                else:
+                    break
+
+            emoji = CALLOUT_EMOJIS.get(htype, CALLOUT_EMOJIS["default"])
+            result.append(
+                '{{{{< callout type="{}" emoji="{}" >}}}}'.format(htype, emoji)
+            )
+            result.append("**{}**".format(label))
+            stack.append(("bare", htype, label))
+            i += 1
+            continue
+
+        # --- Not a callout line ---
         bqm = BLOCKQUOTE_RE.match(line)
-        if bqm:
+        if bqm and not in_code:
             current_depth = len(bqm.group(1))
             content = bqm.group(2)
 
-            # Close callouts that are at >= this blockquote depth
-            while stack and stack[-1][0] >= current_depth:
-                result.append("{{< /callout >}}")
-                stack.pop()
+            # Close callouts at >= this blockquote depth
+            while stack:
+                top = stack[-1]
+                if isinstance(top[0], int) and top[0] >= current_depth:
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+                elif isinstance(top[0], str) and top[0] == "bare":
+                    # Inside a bare callout — keep it open, just append content
+                    # (strip blockquote prefix from content)
+                    break
+                else:
+                    break
 
             result.append(content)
         else:
-            # Non-blockquote line — close ALL open callouts
-            while stack:
-                result.append("{{< /callout >}}")
-                stack.pop()
+            # Non-blockquote line
+            # Check for section breaks that close bare callouts
+            if stack and isinstance(stack[-1][0], str) and stack[-1][0] == "bare":
+                if SECTION_BREAK_RE.match(line) or (
+                    line.strip() == ""
+                    and i + 1 < len(lines)
+                    and not lines[i + 1].startswith(" ")
+                    and not lines[i + 1].startswith("- ")
+                    and not lines[i + 1].startswith("* ")
+                    and not lines[i + 1].startswith(">")
+                ):
+                    # Close bare callout on section break
+                    while (
+                        stack
+                        and isinstance(stack[-1][0], str)
+                        and stack[-1][0] == "bare"
+                    ):
+                        result.append("{{< /callout >}}")
+                        stack.pop()
+                # Otherwise keep it open (content continues)
+            else:
+                # Close blockquote callouts when leaving blockquote
+                while stack and isinstance(stack[-1][0], int):
+                    result.append("{{< /callout >}}")
+                    stack.pop()
+
             result.append(line)
 
         i += 1
