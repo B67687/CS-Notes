@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.0
+      HUGO_VERSION: 0.162.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -45,6 +45,10 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
+      - name: Transform Obsidian syntax for Hextra compat
+        run: |
+          python3 scripts/fix-obsidian-syntax.py content/ --output build-content/
+
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -52,7 +56,8 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --contentDir build-content
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
