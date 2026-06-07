@@ -27,3 +27,4 @@ Start with:
 
 ```markdown
 A ⊕ B = A·B̅ + A̅·B
+```

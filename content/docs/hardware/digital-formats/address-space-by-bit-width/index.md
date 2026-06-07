@@ -32,3 +32,4 @@ draft: false
 Bytes_to_Bits  = Bytes × 8
 KiB_to_KB      ≈ KiB × 1.024
 Binary_to_Dec  ≈ Bytes × (1024^n / 1000^n)
+```
