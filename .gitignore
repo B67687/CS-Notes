@@ -49,3 +49,8 @@ meta/
 
 # PNG images in vault (not used on the site)
 hugo-content/Obsidian-Notes-I-Wrote/Miscellaneous/**/*.png
+
+# Local publishing scripts (not needed for CI build)
+scripts/convert-vault.py
+scripts/publish.ps1
+scripts/sync_obsidian_to_hugo.py
