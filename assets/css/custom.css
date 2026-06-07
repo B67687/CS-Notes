@@ -270,11 +270,9 @@ article h6 {
   margin: 0.8em 0 0.3em;
 }
 
-/* Make heading anchors less prominent */
-.content .subheading-anchor,
-.markdown-body .subheading-anchor {
-  opacity: 0.3;
-}
+/* Subheading anchors (# icon) hidden by default, visible on hover.
+   Hextra defaults to opacity:0 and transitions to 1 on hover.
+   No override needed — keep default behavior. */
 
 /* =============================================
    CHECKBOX / TASK LIST STYLING (Obsidian-like)
