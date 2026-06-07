@@ -211,6 +211,22 @@ html:not(.dark) .markdown-body tr:nth-child(even) td {
    OBSIDIAN-LIKE HEADINGS — subtle, not enlarged
    ============================================= */
 
+/* Fix: callout divs sometimes get wrapped in <h2> by Hugo's goldmark.
+   Reset heading styles when it contains a callout so it renders as
+   a normal block-level container instead of a heading. */
+h2:has(div.hx\\:overflow-x-auto) {
+  all: revert;
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+h2:has(div.hx\\:overflow-x-auto) .subheading-anchor {
+  display: none;
+}
+
 /* Content headings: Obsidian keeps headings compact */
 .content h1,
 .markdown-body h1,
