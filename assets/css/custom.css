@@ -311,6 +311,17 @@ html:not(.dark) .hextra-sidebar-container a:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
+/* Fix: blockquotes inside callouts show checklist items (❌/✅/☑️).
+   Remove italic style (they're checklist feedback, not citations)
+   and reduce margins for compact Obsidian-like display. */
+div.hx\\:overflow-x-auto blockquote {
+  font-style: normal;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 * {
   transition:
     background-color 0.15s ease,
