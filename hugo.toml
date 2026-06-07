@@ -30,7 +30,7 @@ defaultContentLanguage = "en"
 
 [params.theme]
   # dark | light | system
-  default = "system"
+  default = "dark"
   displayToggle = true
 
 # Markdown rendering
