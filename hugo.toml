@@ -28,6 +28,18 @@ defaultContentLanguage = "en"
   # Footer
   footer.display = true
 
+# Search configuration
+[params.search]
+  enable = true
+  # FlexSearch index options
+  [params.search.flexsearch]
+    tokenize = "forward"
+
+# Code copy button always visible
+[params.highlight]
+  [params.highlight.copy]
+    enable = true
+    display = "always"
 [params.theme]
   # dark | light | system
   default = "dark"
@@ -59,6 +71,7 @@ defaultContentLanguage = "en"
       inline = [['$', '$']]
 
   # Syntax highlighting
+  # Syntax highlighting — Hextra uses Chroma with configurable colors
   [markup.highlight]
     anchorLineNumbers = false
     codeFences = true
@@ -66,7 +79,7 @@ defaultContentLanguage = "en"
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNumbers = false
+    lineNumbers = true
     lineNumbersInTable = true
     noClasses = true
     style = "github"
